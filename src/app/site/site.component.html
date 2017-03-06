@@ -1,0 +1,163 @@
+<div class="navbar-fixed">
+  <nav class="default_color" role="navigation">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a id="logo-container" class="brand-logo"><b>ED</b>ease</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#intro">Over</a></li>
+          <li><a href="#work">Werk</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#intro">Over</a></li>
+          <li><a href="#work">Werk</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i>sdfsdf</a>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Modal Header</h4>
+    <p>A bunch of text</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
+</div>
+
+
+      
+
+
+<!--Intro and service-->
+<div id="intro" class="section scrollspy black">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 center white-text">
+        <h2 class="center header text_h2 white-text"><span class="span_h2">Development </span>/<span class="span_h2"> Design</span></h2>
+      </div>
+      <div class="col s12 m4 l4">
+        <div class="center promo promo-example">
+          <i class="mdi-image-flash-on"></i>
+          <h5 class="promo-caption white-text">Moderne technieken</h5>
+          <div class="divider light-green accent-2"></div>
+          <p class="light center white-text">Er is heel wat veranderd in de wondere wereld van het web de afgelopen jaren. Websites en applicaties moeten content
+            op een specifieke </p>
+        </div>
+      </div>
+      <div class="col s12 m4 l4">
+        <div class="center promo promo-example">
+          <i class="mdi-social-group"></i>
+          <h5 class="promo-caption white-text">Gebruikersgericht</h5>
+          <div class="divider light-green accent-2"></div>
+          <p class="light center white-text">Lekker gebruikersgericht</p>
+        </div>
+      </div>
+      <div class="col s12 m4 l4">
+        <div class="center promo promo-example">
+          <i class="mdi-hardware-desktop-windows"></i>
+          <h5 class="promo-caption white-text">All in 1</h5>
+          <div class="divider light-green accent-2"></div>
+          <p class="light center white-text">Front End + Back end</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="parallax-container">
+  <div class="parallax"><img src="assets/2.png"></div>
+</div>
+
+<!--Work-->
+<div class="section scrollspy black" id="work">
+  <div class="container">
+    <h2 class="header text_b">Work </h2>
+    <div class="row">
+
+
+      <div class="col s12 m4 l4">
+        <div class="card">
+          <div (click)="showWork()" class="card-image waves-effect waves-block waves-light">
+            <img src="assets/colpick1.png">
+          </div>
+          <div class="card-content">
+            <span (click)="showWork()" class="card-title  grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+    <ul class="pagination center">
+      <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+      <li class="active"><a href="#!">1</a></li>
+      <li class="waves-effect"><a href="#!">2</a></li>
+      <li class="waves-effect"><a href="#!">3</a></li>
+      <li class="waves-effect"><a href="#!">4</a></li>
+      <li class="waves-effect"><a href="#!">5</a></li>
+      <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+    </ul>
+  </div>
+</div>
+
+<!--Parallax-->
+
+<div class="parallax-container">
+  <div class="parallax"><img src="assets/1.png"></div>
+</div>
+
+
+
+<!--Footer-->
+<footer id="contact" class="page-footer default_color scrollspy">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <form class="col s12" action="contact.php" method="post">
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="mdi-action-account-circle prefix white-text"></i>
+              <input id="icon_prefix" name="name" type="text" class="validate white-text">
+              <label for="icon_prefix" class="white-text">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="mdi-communication-email prefix white-text"></i>
+              <input id="icon_email" name="email" type="email" class="validate white-text">
+              <label for="icon_email" class="white-text">Email-id</label>
+            </div>
+            <div class="input-field col s12">
+              <i class="mdi-editor-mode-edit prefix white-text"></i>
+              <textarea id="icon_prefix2" name="message" class="materialize-textarea white-text"></textarea>
+              <label for="icon_prefix2" class="white-text">Message</label>
+            </div>
+            <div class="col offset-s7 s5">
+              <button class="btn waves-effect waves-light green darken-1" type="submit">Submit
+                                <i class="mdi-content-send right white-text"></i>
+                            </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">EDease.nl</h5>
+      </div>
+      <div class="col l3 s12">
+        <h5 class="white-text">Social</h5>
+
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright default_color">
+    <div class="container">
+      Jup
+    </div>
+  </div>
+</footer>
