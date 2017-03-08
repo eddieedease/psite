@@ -17,11 +17,11 @@ export class SiteComponent implements OnInit {
   ngOnInit() {
     $(document).ready(function () {
       $('.button-collapse').sideNav();
+      $('.carousel.carousel-slider').carousel({fullWidth: true});
       $('.scrollspy').scrollSpy();
       $('.parallax').parallax();
       $('.modal').modal();
     });
-    // 
   }
 
   showWork() {

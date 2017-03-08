@@ -5,11 +5,16 @@
  * Thanks for MaterializeCSS.com
  */
 
-.default_color{background-color: white !important}
 
-.second_color{background-color: #F0F0F0  !important}
+.default_color{background-color: #00838f  !important}
 
-.default_color_text{color: greenyellow !important}
+.second_color{background-color: #F19F4D !important}
+
+.third_color{background-color: #F9CF00 !important}
+
+.bg_color{background-color: #eee !important}
+
+.default_color_text{color: #00838f !important}
 
 .icon-block {
     padding: 0 15px;
@@ -38,18 +43,19 @@
 
 .brand-logo{
     position: absolute;
-    color: #000;
+    color: #fff;
     display: inline-block;
     font-size: 2.1rem;
     font-style: normal;
     font-weight: 100;
     padding: 0;
     letter-spacing: 3px;
+    
 }
 
 .text_h2 {font-weight: 100;margin-bottom: 4%; line-height: 4.5rem;}
 
-.span_h2 {font-weight: 250;color:greenyellow;}
+.span_h2 {font-weight: 250;color:#006064  ;}
 
 .text_b{color: #2196F3;}
 
@@ -73,7 +79,7 @@
 
 nav ul a {
     font-size: 1.2rem;
-    color: black;
+    color: #fff;
     letter-spacing: 2px;
     display: block;
     font-weight: 300;
@@ -155,5 +161,18 @@ nav a.button-collapse {
 
 footer.page-footer {
     margin-top: 0px !important;
+}
+
+
+
+.modal{
+    width: 90%;
+     min-height: 300px;
+
+}
+
+
+.carousel{
+    
 }
 
