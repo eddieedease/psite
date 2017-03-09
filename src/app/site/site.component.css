@@ -1,47 +1,55 @@
 /* Custom Stylesheet */
+
+
 /**
  *
  * Made By Joash Pereira
  * Thanks for MaterializeCSS.com
  */
 
+.default_color {
+    background-color: #00838f !important
+}
 
-.default_color{background-color: #00838f  !important}
+.second_color {
+    background-color: #F19F4D !important
+}
 
-.second_color{background-color: #F19F4D !important}
+.third_color {
+    background-color: #F9CF00 !important
+}
 
-.third_color{background-color: #F9CF00 !important}
+.bg_color {
+    background-color: #eee !important
+}
 
-.bg_color{background-color: #eee !important}
-
-.default_color_text{color: #00838f !important}
+.default_color_text {
+    color: #00838f !important
+}
 
 .icon-block {
     padding: 0 15px;
 }
 
-
-
 #index-banner {
-    
     max-height: 864px;
     position: relative;
     background-color: #F0F0F0;
 }
 
-#nav_f{
-    box-shadow: none !important; 
-    -webkit-box-shadow:none !important;
+#nav_f {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
 }
 
 .text_h {
     padding: 15% 0;
     font-size: 6.0em;
     font-weight: 100;
-    color:white;
+    color: white;
 }
 
-.brand-logo{
+.brand-logo {
     position: absolute;
     color: #fff;
     display: inline-block;
@@ -50,30 +58,47 @@
     font-weight: 100;
     padding: 0;
     letter-spacing: 3px;
-    
 }
 
-.text_h2 {font-weight: 100;margin-bottom: 4%; line-height: 4.5rem;}
+.text_h2 {
+    font-weight: 100;
+    margin-bottom: 4%;
+    line-height: 4.5rem;
+}
 
-.span_h2 {font-weight: 250;color:#006064  ;}
+.span_h2 {
+    font-weight: 250;
+    color: #006064;
+}
 
-.text_b{color: #2196F3;}
+.text_b {
+    color: #2196F3;
+}
 
-.in{font-weight: 400 !important; font-style: normal !important;}
+.in {
+    font-weight: 400 !important;
+    font-style: normal !important;
+}
 
 .promo i {
     color: #2196F3;
     font-size: 7rem;
     display: block;
 }
-.card-content a {color: #2196F3;}
 
-.card-content a:hover {color: #2196F3;}
+.card-content a {
+    color: #2196F3;
+}
 
+.card-content a:hover {
+    color: #2196F3;
+}
 
-.text_pink{color:#EF9A9A;}
+.text_pink {
+    color: #EF9A9A;
+}
 
-.card .card-image img{
+.card .card-image img {
     max-height: 180px;
 }
 
@@ -87,29 +112,35 @@ nav ul a {
 }
 
 
-
-
 /* Preloader */
+
 #preloader {
     position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background-color:#fff; /* change if the mask should have another color then white */
-    z-index:1200; /* makes sure it stays on top */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    /* change if the mask should have another color then white */
+    z-index: 1200;
+    /* makes sure it stays on top */
 }
 
 #status {
-    width:200px;
-    height:200px;
-    position:absolute;
-    left:50%; /* centers the loading animation horizontally one the screen */
-    top:50%; /* centers the loading animation vertically one the screen */
-    background-repeat:no-repeat;
-    background-position:center;
-    margin:-100px 0 0 -100px; /* is width and height divided by two */
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    /* is width and height divided by two */
 }
+
+.introslider {}
 
 @media only screen and (max-width: 480px) {
     .text_h {
@@ -120,7 +151,14 @@ nav ul a {
     }
 }
 
-input, textarea {
+@media only screen and (max-width: 800px) {
+    .introslider {
+        height: 150px;
+    }
+}
+
+input,
+textarea {
     border-bottom: 1px solid #fff;
 }
 
@@ -148,7 +186,7 @@ nav a.button-collapse {
 }
 
 .card-avatar .card-content i {
-   font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .card-avatar .card-content .card-title {
@@ -163,18 +201,9 @@ footer.page-footer {
     margin-top: 0px !important;
 }
 
-
-
-.modal{
+.modal {
     width: 90%;
     min-height: 300px;
-
 }
 
-
-
-
-.carousel{
-    
-}
-
+.carousel {}
