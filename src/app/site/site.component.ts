@@ -17,7 +17,19 @@ export class SiteComponent implements OnInit {
   ngOnInit() {
     $(document).ready(function () {
       $('.button-collapse').sideNav();
-      $('.carousel.carousel-slider').carousel({fullWidth: true});
+      $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: false,
+        noWrap: true
+      });
+
+      // autoplay()
+
+      // function autoplay() {
+      //   $('.carousel.carousel-slider').carousel('next');
+      //   setTimeout(autoplay, 7000);
+      // }
+
       $('.scrollspy').scrollSpy();
       $('.parallax').parallax();
       $('.modal').modal();

@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-.sidenav-overlay{
-    z-index: 10 !important;
-}
 
+#sidenav-overlay{
+    z-index: 0 !important;
+}
