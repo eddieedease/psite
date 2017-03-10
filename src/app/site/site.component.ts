@@ -2,6 +2,10 @@ import {
   Component,
   OnInit
 } from '@angular/core';
+import {
+  Http
+} from '@angular/http';
+import 'rxjs/add/operator/map';
 
 declare var $: any;
 
@@ -12,24 +16,45 @@ declare var $: any;
 })
 export class SiteComponent implements OnInit {
 
-  constructor() {}
+  json;
+
+  workArray = [];
+
+  constructor(private http_: Http) {
+    http_.get('assets/data.json')
+      .map(response => response.json())
+      .subscribe(
+        article => {
+          //gitgit and convert to array
+          this.json = article;
+          console.log(this.json)
+          this.workArray = $.map(this.json, function(el) { return el });
+
+
+        },
+        error => console.error(error));
+  }
+
+
+
+
 
   ngOnInit() {
     $(document).ready(function () {
       $('.button-collapse').sideNav();
       $('.scrollspy').scrollSpy();
-      $('.parallax').parallax();
       $('.modal').modal();
-      $('.carousel.carousel-slider').carousel({
-        fullWidth: true,
-        indicators: false,
-        noWrap: true
-      });
+      $('.collapsible').collapsible();
     });
+
   }
+
+
 
   showWork() {
     // open up the modal
     $('#modal1').modal('open');
   }
+
+
 }
