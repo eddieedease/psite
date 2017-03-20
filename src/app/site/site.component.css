@@ -103,8 +103,8 @@
 }
 
 nav ul a {
-    font-size: 1.2rem;
-    color: #fff;
+    font-size: 1rem;
+    color: #000;
     letter-spacing: 2px;
     display: block;
     font-weight: 300;
@@ -120,7 +120,7 @@ nav ul a {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fff;
+    background-color: #000;
     /* change if the mask should have another color then white */
     z-index: 1200;
     /* makes sure it stays on top */
@@ -205,5 +205,3 @@ footer.page-footer {
     width: 90%;
     min-height: 300px;
 }
-
-.carousel {}
