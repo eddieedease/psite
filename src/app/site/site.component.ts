@@ -25,10 +25,10 @@ export class SiteComponent implements OnInit {
       .map(response => response.json())
       .subscribe(
         article => {
-          //gitgit and convert to array
+          // GET JSON Object
           this.json = article;
-          console.log(this.json)
-          this.workArray = $.map(this.json, function(el) { return el });
+          console.log(this.json);
+          this.workArray = $.map(this.json, function(el) { return el; });
 
 
         },

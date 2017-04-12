@@ -16,5 +16,17 @@
         "klant": "ETZ",
         "wysig": "<b>Blabla</b> <br> Owyeaaa",
         "images": ["assets/1.png", "assets/2.png", "assets/3.png"]
+    },
+    "Work4": {
+        "title": "ETZ E-Learning Ondersteuning",
+        "klant": "ETZ",
+        "wysig": "<b>Blabla</b> <br> Owyeaaa",
+        "images": ["assets/1.png", "assets/2.png", "assets/3.png"]
+    },
+    "Work5": {
+        "title": "ETZ E-Learning Ondersteuning",
+        "klant": "ETZ",
+        "wysig": "<b>Blabla</b> <br> Owyeaaa",
+        "images": ["assets/1.png", "assets/2.png", "assets/3.png"]
     }
 }
