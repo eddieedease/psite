@@ -7,16 +7,20 @@
  * Thanks for MaterializeCSS.com
  */
 
-.default_color {
-    background-color: #00838f !important
+.first_color {
+    background-color: #f6f6f5 !important
 }
 
 .second_color {
-    background-color: #F19F4D !important
+    background-color: #ea5442 !important
 }
 
 .third_color {
-    background-color: #F9CF00 !important
+    background-color: #101626 !important
+}
+
+.fourth_color {
+    background-color: #7c9d95 !important
 }
 
 .bg_color {
@@ -24,7 +28,7 @@
 }
 
 .default_color_text {
-    color: #00838f !important
+    color: #fff !important
 }
 
 .icon-block {
@@ -104,7 +108,7 @@
 
 nav ul a {
     font-size: 1rem;
-    color: #fff;
+    color: #000;
     letter-spacing: 2px;
     display: block;
     font-weight: 300;

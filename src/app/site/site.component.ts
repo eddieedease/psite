@@ -45,7 +45,7 @@ export class SiteComponent implements OnInit {
       $('.scrollspy').scrollSpy();
       $('.modal').modal();
       $('.collapsible').collapsible();
-      $('.slider').slider({indicators: true});
+      $('.slider').slider({indicators: false});
     });
 
   }
