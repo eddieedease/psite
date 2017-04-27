@@ -20,7 +20,9 @@ export class SiteComponent implements OnInit {
 
   workArray = [];
 
-  constructor(private http_: Http) {
+  public p;
+
+  constructor(http_: Http) {
     http_.get('assets/data.json')
       .map(response => response.json())
       .subscribe(
