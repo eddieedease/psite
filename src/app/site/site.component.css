@@ -207,5 +207,13 @@ footer.page-footer {
 
 .modal {
     width: 90%;
+    max-height:95% !important;
+    min-height: 300px;
+}
+
+.modal.modal-fixed-footer{
+    width: 90%;
+    height:95% !important;
+    max-height:95% !important;
     min-height: 300px;
 }

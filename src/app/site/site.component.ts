@@ -7,6 +7,7 @@ import {
 } from '@angular/http';
 import 'rxjs/add/operator/map';
 
+// Needed for Jquery
 declare var $: any;
 
 @Component({
@@ -30,7 +31,9 @@ export class SiteComponent implements OnInit {
           // GET JSON Object
           this.json = article;
           console.log(this.json);
-          this.workArray = $.map(this.json, function(el) { return el; });
+          this.workArray = $.map(this.json, function (el) {
+            return el;
+          });
 
 
         },
@@ -44,12 +47,27 @@ export class SiteComponent implements OnInit {
   ngOnInit() {
     $(document).ready(function () {
       $('.button-collapse').sideNav();
+      $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true,
+        duration: 200
+      });
       $('.scrollspy').scrollSpy();
-      $('.modal').modal();
+      $('.modal').modal({
+        startingTop: '80%',
+        endingTop: '2%',
+      });
       $('.collapsible').collapsible();
-      $('.slider').slider({indicators: false,height:300});
+      $('.slider').slider({
+        indicators: false,
+        height: 300
+      });
     });
+  }
 
+  //taptarget test
+  debugClick () {
+    $('.tap-target').tapTarget('open');
   }
 
 
@@ -57,7 +75,14 @@ export class SiteComponent implements OnInit {
   showWork() {
     // open up the modal
     $('#modal1').modal('open');
+    $('.carousel.carousel-slider').carousel({
+      fullWidth: true,
+      indicators: true,
+      duration: 200
+    });
+    setInterval(function () {
+      $('.carousel').carousel('next');
+    }, 5000); // every 2 seconds
   }
-
 
 }
