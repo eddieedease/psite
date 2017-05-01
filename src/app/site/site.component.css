@@ -217,3 +217,8 @@ footer.page-footer {
     max-height:95% !important;
     min-height: 300px;
 }
+
+
+.carousel .carousel-item > img{
+    min-height:300px;
+}

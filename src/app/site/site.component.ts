@@ -80,9 +80,10 @@ export class SiteComponent implements OnInit {
       indicators: true,
       duration: 200
     });
-    setInterval(function () {
-      $('.carousel').carousel('next');
-    }, 5000); // every 2 seconds
+
+    //setInterval(function () {
+    //  $('.carousel').carousel('next');
+    //}, 5000); // every 2 seconds
   }
 
 }
