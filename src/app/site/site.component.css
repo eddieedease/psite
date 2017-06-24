@@ -43,8 +43,7 @@
 
 .headd {
     text-align: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
 }
 
 .headd h3 {
@@ -70,6 +69,10 @@
     font-size: 6.0em;
     font-weight: 100;
     color: white;
+}
+
+.droppy {
+    background-color: black;
 }
 
 .brand-logo {
