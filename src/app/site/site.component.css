@@ -41,6 +41,25 @@
     background-color: #F0F0F0;
 }
 
+.headd {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.headd h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.headd h5 {
+    background-color: #101626;
+    padding: 10px;
+    color: #f5f5f5;
+    display: inline-block;
+    font-size: 1.1rem;
+}
+
 #nav_f {
     box-shadow: none !important;
     -webkit-box-shadow: none !important;
@@ -207,18 +226,17 @@ footer.page-footer {
 
 .modal {
     width: 90%;
-    max-height:95% !important;
+    max-height: 95% !important;
     min-height: 300px;
 }
 
-.modal.modal-fixed-footer{
+.modal.modal-fixed-footer {
     width: 90%;
-    height:95% !important;
-    max-height:95% !important;
+    height: 95% !important;
+    max-height: 95% !important;
     min-height: 300px;
 }
 
-
-.carousel .carousel-item > img{
-    min-height:300px;
+.carousel .carousel-item>img {
+    min-height: 300px;
 }
