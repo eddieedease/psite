@@ -6,11 +6,13 @@ import {Ng2PaginationModule} from 'ng2-pagination';
 
 import { AppComponent } from './app.component';
 import { SiteComponent } from './site/site.component';
+import { TerminalComponent } from './terminal/terminal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SiteComponent
+    SiteComponent,
+    TerminalComponent
   ],
   imports: [
     BrowserModule,
