@@ -6,7 +6,8 @@ a {
 
 .wrap {
   margin: 30px auto;
-  text-align: center;
+  text-align: left !important;
+  
 }
 
 .test {
@@ -14,6 +15,7 @@ a {
   font-size: 1.1em;
   font-weight: 300;
   margin-top: 10px;
+  
 }
 
 
