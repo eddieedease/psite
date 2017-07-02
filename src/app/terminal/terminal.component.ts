@@ -11,7 +11,7 @@ import {
 export class TerminalComponent implements OnInit {
 
   text: any;
-  selff ;
+  selff;
 
   timer;
 
@@ -20,21 +20,21 @@ export class TerminalComponent implements OnInit {
   ngOnInit() {
     this.text = $('.test').data('text');
     this.selff = this;
-    
+
     //this.typeWriter(this.text, 0);
-    this.typeWriter(this.text,0);
+    this.typeWriter(this.text, 0);
   }
 
- 
+
 
   typeWriter(_text, n) {
     if (n < (_text.length)) {
       $('.test').html(_text.substring(0, n + 1));
       n++;
 
-        this.timer = setTimeout(() => this.selff.typeWriter(_text, n), 50);
-        
-      
+      this.timer = setTimeout(() => this.selff.typeWriter(_text, n), 50);
+    } else {
+      console.log('finished with typing');
     }
   }
 
