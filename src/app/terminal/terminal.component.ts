@@ -32,7 +32,7 @@ export class TerminalComponent implements OnInit {
       $('.test').html(_text.substring(0, n + 1));
       n++;
 
-      this.timer = setTimeout(() => this.selff.typeWriter(_text, n), 50);
+      this.timer = setTimeout(() => this.selff.typeWriter(_text, n), 200);
     } else {
       console.log('finished with typing');
     }

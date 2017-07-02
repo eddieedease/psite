@@ -11,9 +11,15 @@ a {
 
 .test {
   display: inline;
-  font-size: 2em;
+  font-size: 1.1em;
   font-weight: 300;
   margin-top: 10px;
+}
+
+
+.beforeToken {
+  display: inline;
+  color: #006064;
 }
   
 
