@@ -38,6 +38,10 @@ export class TerminalComponent implements OnInit {
     }
   }
 
+  hitEnter(){
+    console.log('works');
+  }
+
 
 
 
