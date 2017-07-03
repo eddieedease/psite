@@ -1,0 +1,13 @@
+<h4>Work</h4>
+<div class="row">
+    <div class="col s12">
+        <p>Info</p>
+    </div>
+    <div class="col s12 m6 l6">
+        Detailinfo
+    </div>
+    <div class="col s12 m6 l6">
+        <gallery *ngIf="!galloaded" [galleryName]="'gal1'" [flexBorderSize]="2" [flexImageSize]="3" (viewerChange)="imageGalUpdate($event)">>
+        </gallery>
+    </div>
+</div>

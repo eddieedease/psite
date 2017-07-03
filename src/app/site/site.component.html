@@ -40,34 +40,6 @@
 
 
 
-<!-- Modal Structure -->
-<div id="modal1" class="modal modal-fixed-footer">
-    <div class="modal-content">
-        <h4>Modal Header</h4>
-        <div class="row">
-            <div class="col s12">
-                <p>Info</p>
-            </div>
-            <div class="col s12 m6 l6">
-                Detailinfo
-            </div>
-            <div class="col s12 m6 l6">
-            </div>
-        </div>
-        <gallery [flexBorderSize]="3" [flexImageSize]="2">
-        </gallery>
-
-
-
-
-
-
-    </div>
-    <div class="modal-footer">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Sluiten</a>
-    </div>
-</div>
-
 <div class="z-depth-1">
     <div class="headd">
         <img class="responsive-img" src="/assets/logo2.png"><br><br>
@@ -171,10 +143,10 @@
         <div class="row ">
             <div *ngFor="let work of workArray | paginate: { itemsPerPage: 6, currentPage: p }" class="col s12 m4 l4">
                 <div class="card">
-                    <div (click)="showWork() " class="card-image waves-effect waves-block waves-light ">
+                    <div routerLink="/work" class="card-image waves-effect waves-block waves-light ">
                         <img src="assets/colpick2.png ">
                     </div>
-                    <div class="card-content ">
+                    <div routerLink="/work">
                         <span (click)="showWork() " class="card-title grey-text text-darken-4 ">Project Title <i class="mdi-navigation-more-vert right "></i></span>
                     </div>
                 </div>

@@ -3,19 +3,38 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
 import {Ng2PaginationModule} from 'ng2-pagination'; 
+import { RouterModule, Routes } from '@angular/router';
 import {Angular2ImageGalleryModule} from 'angular2-image-gallery';
 
 import { AppComponent } from './app.component';
 import { SiteComponent } from './site/site.component';
 import { TerminalComponent } from './terminal/terminal.component';
+import { WorkComponent } from './work/work.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+
+const appRoutes: Routes = [
+  { path: 'site', component: SiteComponent },
+  { path: 'work',      component: WorkComponent },
+  { path: '',
+    redirectTo: '/site',
+    pathMatch: 'full'
+  },
+  { path: '**', component: NotfoundComponent }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
     SiteComponent,
-    TerminalComponent
+    TerminalComponent,
+    WorkComponent,
+    NotfoundComponent
   ],
   imports: [
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: false } // <-- debugging purposes only
+    ),
     BrowserModule,
     FormsModule,
     HttpModule,

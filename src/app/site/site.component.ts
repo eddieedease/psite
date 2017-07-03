@@ -18,6 +18,7 @@ declare var $: any;
 export class SiteComponent implements OnInit {
 
   json;
+  galloaded;
 
   workArray = [];
 
@@ -62,6 +63,7 @@ export class SiteComponent implements OnInit {
         indicators: false,
         height: 300
       });
+      this.galloaded = true;
     });
   }
 
@@ -84,6 +86,10 @@ export class SiteComponent implements OnInit {
     //setInterval(function () {
     //  $('.carousel').carousel('next');
     //}, 5000); // every 2 seconds
+  }
+
+  imageGalUpdate(_event) {
+    console.log(_event);
   }
 
 }
