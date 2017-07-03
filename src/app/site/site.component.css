@@ -46,7 +46,7 @@
 }
 
 .headd {
-    background-image: url('/assets/head.jpg');
+    background-image: url('../../assets/head.jpg');
     background-size: cover;
     text-align: center;
     padding-top: 5%;
