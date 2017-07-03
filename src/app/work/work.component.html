@@ -1,13 +1,32 @@
-<h4>Work</h4>
-<div class="row">
-    <div class="col s12">
-        <p>Info</p>
-    </div>
-    <div class="col s12 m6 l6">
-        Detailinfo
-    </div>
-    <div class="col s12 m6 l6">
-        <gallery *ngIf="!galloaded" [galleryName]="'gal1'" [flexBorderSize]="2" [flexImageSize]="3" (viewerChange)="imageGalUpdate($event)">>
+<div id="about" class="card section scrollspy">
+    <a routerLink="/site" class="waves-effect waves-light btn">Terug</a>
+
+
+    <div class="card-content">
+        <span class="card-title grey-text text-darken-4">Card Title</span>
+        <div class="row">
+
+            <div class="col s12 m10">
+                <div class="section">
+                    <p class="flow-text">
+                        The name is Eddie and I'm an UX/UI designdeveloper, with extensive practical experience in brand strategy, creative direction and project management; devoted to Functional Programming and Information Architecture. Also a huge fan of semantics and futuristic
+                        interfaces.
+                    </p>
+                </div>
+                <div class="divider"></div>
+                <div class="section">
+                    <b>Web Developer - Graphic Artist - User Experience Designer</b>
+                </div>
+            </div>
+            <div class="col m2">
+
+                <img src="https://cdn1.iconfinder.com/data/icons/user-pictures/101/malecostume-512.png" width="100%" />
+                <a class="btn-floating  btn-large waves-effect waves-light teal">
+                    <=</a>
+                        <a class="btn-floating  right btn-large waves-effect waves-light teal">=></a>
+            </div>
+        </div>
+        <gallery *ngIf="!galloaded" [galleryName]="'gal1'" [flexBorderSize]="2" [flexImageSize]="3" (viewerChange)="imageGalUpdate($event)">
         </gallery>
     </div>
 </div>

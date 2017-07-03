@@ -14,7 +14,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
 
 const appRoutes: Routes = [
   { path: 'site', component: SiteComponent },
-  { path: 'work',      component: WorkComponent },
+  { path: 'work', component: WorkComponent },
   { path: '',
     redirectTo: '/site',
     pathMatch: 'full'
@@ -33,7 +33,7 @@ const appRoutes: Routes = [
   imports: [
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: false } // <-- debugging purposes only
+      { enableTracing: true } // <-- debugging purposes only
     ),
     BrowserModule,
     FormsModule,

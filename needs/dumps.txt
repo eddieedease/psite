@@ -1,3 +1,9 @@
+** image gallery, requires imaGick **
+node node_modules/angular2-image-gallery/convert.js <path/to/your/images>
+
+
+
+
 ** the button prefab thingie attention"
 
 

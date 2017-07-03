@@ -12,4 +12,8 @@ export class WorkComponent implements OnInit {
   ngOnInit() {
   }
 
+  imageGalUpdate(_event) {
+    console.log(_event);
+  }
+
 }
