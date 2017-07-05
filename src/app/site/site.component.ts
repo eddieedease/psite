@@ -16,12 +16,10 @@ declare var $: any;
   styleUrls: ['./site.component.css']
 })
 export class SiteComponent implements OnInit {
-
+  
   json;
   galloaded;
-
   workArray = [];
-
   public p;
 
   constructor(http_: Http) {
@@ -35,14 +33,9 @@ export class SiteComponent implements OnInit {
           this.workArray = $.map(this.json, function (el) {
             return el;
           });
-
-
         },
         error => console.error(error));
   }
-
-
-
 
 
   ngOnInit() {
