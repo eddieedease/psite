@@ -11,6 +11,7 @@ import { SiteComponent } from './site/site.component';
 import { TerminalComponent } from './terminal/terminal.component';
 import { WorkComponent } from './work/work.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { StepperComponent } from './stepper/stepper.component';
 
 const appRoutes: Routes = [
   { path: 'site', component: SiteComponent },
@@ -28,7 +29,8 @@ const appRoutes: Routes = [
     SiteComponent,
     TerminalComponent,
     WorkComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    StepperComponent
   ],
   imports: [
     RouterModule.forRoot(
