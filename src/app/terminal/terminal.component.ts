@@ -15,14 +15,15 @@ export class TerminalComponent implements OnInit {
 
   timer;
 
+  chatLog: String = "booting ....  ....  <br>Hello<br>I would like to talk to you<br>  :)<br>";
+
   constructor() {}
 
   ngOnInit() {
-    this.text = $('.test').data('text');
-    this.selff = this;
-
+  
+     this.selff = this;
     //this.typeWriter(this.text, 0);
-    this.typeWriter(this.text, 0);
+    this.typeWriter(this.chatLog, 0);
   }
 
 
