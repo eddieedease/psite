@@ -7,15 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkComponent implements OnInit {
 
-  galloaded;
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  imageGalUpdate(_event) {
-    console.log(_event);
-  }
+ 
 
 }
