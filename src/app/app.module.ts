@@ -5,6 +5,9 @@ import { HttpModule, JsonpModule } from '@angular/http';
 import {Ng2PaginationModule} from 'ng2-pagination'; 
 import { RouterModule, Routes } from '@angular/router';
 
+
+import 'hammerjs';
+import { NgxGalleryModule } from 'ngx-gallery';
 import { AppComponent } from './app.component';
 import { SiteComponent } from './site/site.component';
 import { TerminalComponent } from './terminal/terminal.component';
@@ -41,7 +44,8 @@ const appRoutes: Routes = [
     FormsModule,
     HttpModule,
     JsonpModule,
-    Ng2PaginationModule
+    Ng2PaginationModule,
+    NgxGalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent]
