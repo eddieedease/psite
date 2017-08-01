@@ -17,6 +17,7 @@ import { StepperComponent } from './stepper/stepper.component';
 const appRoutes: Routes = [
   { path: 'site', component: SiteComponent },
   { path: 'work', component: WorkComponent },
+  { path: '404', component: NotfoundComponent },
   { path: '',
     redirectTo: '/site',
     pathMatch: 'full'
