@@ -10,7 +10,6 @@ import 'hammerjs';
 import { NgxGalleryModule } from 'ngx-gallery';
 import { AppComponent } from './app.component';
 import { SiteComponent } from './site/site.component';
-import { TerminalComponent } from './terminal/terminal.component';
 import { WorkComponent } from './work/work.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { StepperComponent } from './stepper/stepper.component';
@@ -18,7 +17,6 @@ import { StepperComponent } from './stepper/stepper.component';
 const appRoutes: Routes = [
   { path: 'site', component: SiteComponent },
   { path: 'work', component: WorkComponent },
-  { path: 'hmm', component: TerminalComponent},
   { path: '',
     redirectTo: '/site',
     pathMatch: 'full'
@@ -30,7 +28,6 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     SiteComponent,
-    TerminalComponent,
     WorkComponent,
     NotfoundComponent,
     StepperComponent
