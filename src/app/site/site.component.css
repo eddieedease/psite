@@ -15,27 +15,27 @@
  #f25f5c */
 
 .first_color {
-    background-color: #70c1b3 !important
+    background-color: #E9446D !important
 }
 
 .second_color {
-    background-color: #247ba0 !important
+    background-color: #FFD25E !important
 }
 
 .second_color_text {
-    color: #078490 !important
+    color: #22aCCE !important
 }
 
 .third_color {
-    background-color: #ffe066!important
+    background-color: #013A4C !important
 }
 
 .fourth_color {
-    background-color: #50514f !important
+    background-color: #000 !important
 }
 
 .bg_color {
-    background-color: #eee !important
+    background-color: #22aCCE !important
 }
 
 .default_color_text {
@@ -271,7 +271,7 @@ footer.page-footer {
     min-height: 100%;
     max-height: 100%;
     z-index: -30;
-    background-color: #ffe066;
+    background-color: #22aCCE;
     background-repeat: no-repeat;
     background-size: cover;
     animation: animatedBackground 1000s linear infinite;
