@@ -271,7 +271,7 @@ footer.page-footer {
     min-height: 100%;
     max-height: 100%;
     z-index: -30;
-    background-color: #22aCCE;
+    /* background-color: #22aCCE; */
     background-repeat: no-repeat;
     background-size: cover;
     animation: animatedBackground 1000s linear infinite;
