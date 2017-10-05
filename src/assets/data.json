@@ -1,32 +1,37 @@
 {
     "Work": {
-        "title": "ETZ E-Learning Ondersteuning",
-        "klant": "ETZ",
+        "title": "ETZ E-Learning",
+        "klant": "Elisabeth-Tweesteden Ziekenhuis (ETZ)",
         "wysig": "<b>Blabla</b> <br> Owyeaaa",
-        "images": ["assets/1.png", "assets/2.png", "assets/3.png"]
+        "cover": "/assets/portfolio/etz.jpg",
+        "images": ["assets/portfolio/etz.jpg", "assets/portfolio/etz2.jpg", "assets/portfolio/etz3.jpg", "assets/portfolio/etz4.jpg", "assets/portfolio/etz5.jpg"]
     },
     "Work2": {
-        "title": "ETZ E-Learning Ondersteuning",
+        "title": "KennisCloud",
         "klant": "ETZ",
         "wysig": "<b>Blabla</b> <br> Owyeaaa",
-        "images": ["assets/1.png", "assets/2.png", "assets/3.png"]
+        "cover": "assets/portfolio/kc1.jpg",
+        "images": ["assets/portfolio/kc1.jpg", "assets/portfolio/kc2.jpg", "assets/portfolio/kc3.jpg", "assets/portfolio/kc4.jpg", "assets/portfolio/kc5.jpg", "assets/portfolio/kc6.jpg"]
     },
     "Work3": {
-        "title": "ETZ E-Learning Ondersteuning",
-        "klant": "ETZ",
+        "title": "Picture it",
+        "klant": "Gemeente Breda",
         "wysig": "<b>Blabla</b> <br> Owyeaaa",
-        "images": ["assets/1.png", "assets/2.png", "assets/3.png"]
+        "cover": "assets/portfolio/pictureit.jpg",
+        "images": ["assets/portfolio/pictureit.jpg", "assets/portfolio/pictureit2.jpg", "assets/portfolio/pictureit3.jpg", "assets/portfolio/pictureit5.jpg"]
     },
     "Work4": {
-        "title": "ETZ E-Learning Ondersteuning",
-        "klant": "ETZ",
+        "title": "Box33 Website",
+        "klant": "Box33",
         "wysig": "<b>Blabla</b> <br> Owyeaaa",
-        "images": ["assets/1.png", "assets/2.png", "assets/3.png"]
+        "cover": "assets/portfolio/box331.jpg",
+        "images": ["assets/portfolio/box331.jpg", "assets/portfolio/box33b.jpg", "assets/portfolio/box33c.jpg"]
     },
     "Work5": {
-        "title": "ETZ E-Learning Ondersteuning",
-        "klant": "ETZ",
+        "title": "Kracht in kaart",
+        "klant": "Avans - afstuderen",
         "wysig": "<b>Blabla</b> <br> Owyeaaa",
-        "images": ["assets/1.png", "assets/2.png", "assets/3.png"]
+        "cover": "assets/portfolio/krachtinkaart1.jpg",
+        "images": ["assets/portfolio/krachtinkaart1.jpg", "assets/portfolio/krachtinkaart2.jpg", "assets/portfolio/krachtinkaart3.jpg", "assets/portfolio/krachtinkaart4.jpg", "assets/portfolio/krachtinkaart5.jpg"]
     }
 }

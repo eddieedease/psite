@@ -113,12 +113,12 @@
         <div class="row ">
             <div *ngFor="let work of workArray | paginate: { itemsPerPage: 6, currentPage: p }" class="col s12 m4 l4">
                 <div class="card">
-                    <div routerLink="/work" style="height:200px;background-image: url('assets/colpick1.png');background-size:cover" class="card-image waves-effect waves-block waves-light ">
+                    <div routerLink="/work" style="height:200px;background-image: url('{{work.cover}}');background-size:cover" class="card-image waves-effect waves-block waves-light ">
 
                     </div>
 
                     <div routerLink="/work">
-                        <span (click)="showWork() " class="card-title grey-text text-darken-4 ">Project Title <i class="mdi-navigation-more-vert right "></i></span>
+                        <span (click)="showWork() " class="card-title grey-text text-darken-4 ">{{work.title}} <i class="mdi-navigation-more-vert right "></i></span>
                     </div>
                 </div>
             </div>
