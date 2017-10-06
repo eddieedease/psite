@@ -6,13 +6,19 @@ import {Ng2PaginationModule} from 'ng2-pagination';
 import { RouterModule, Routes } from '@angular/router';
 
 
+
 import 'hammerjs';
+import {EdSerService} from './ed-ser.service';
+
+
 import { NgxGalleryModule } from 'ngx-gallery';
 import { AppComponent } from './app.component';
 import { SiteComponent } from './site/site.component';
 import { WorkComponent } from './work/work.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { StepperComponent } from './stepper/stepper.component';
+
+
 
 const appRoutes: Routes = [
   { path: 'site', component: SiteComponent },
@@ -45,7 +51,7 @@ const appRoutes: Routes = [
     Ng2PaginationModule,
     NgxGalleryModule
   ],
-  providers: [],
+  providers: [EdSerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

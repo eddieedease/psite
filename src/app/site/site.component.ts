@@ -1,19 +1,31 @@
 import {
   Component,
-  OnInit
+  OnInit,
 } from '@angular/core';
+
+import {
+  DomSanitizer
+} from '@angular/platform-browser';
+
+import {
+  Router,
+  ActivatedRoute
+} from '@angular/router';
 import {
   Http
 } from '@angular/http';
 import 'rxjs/add/operator/map';
 
+import {EdSerService} from '../ed-ser.service';
+
 // Needed for Jquery
-declare var $: any;
+// declare var $: any;
 
 @Component({
   selector: 'app-site',
   templateUrl: './site.component.html',
-  styleUrls: ['./site.component.css']
+  styleUrls: ['./site.component.css'],
+  providers: [EdSerService]
 })
 
 export class SiteComponent implements OnInit {
@@ -21,15 +33,19 @@ export class SiteComponent implements OnInit {
   json;
   galloaded;
   workArray = [];
+  
+
   public p;
 
-  constructor(http_: Http) {
+  // tslint:disable-next-line:max-line-length
+  constructor(private router: Router, private route: ActivatedRoute, private http_: Http, private sanitizer: DomSanitizer, private edSer: EdSerService) {
     http_.get('assets/data.json')
       .map(response => response.json())
       .subscribe(
         article => {
-          // GET JSON Object
+          // GET JSON Object --> change to array
           this.json = article;
+          
           console.log(this.json);
           this.workArray = $.map(this.json, function (el) {
             return el;
@@ -40,6 +56,9 @@ export class SiteComponent implements OnInit {
 
 
   ngOnInit() {
+
+    
+
     $(document).ready(function () {
       $('.button-collapse').sideNav();
       $('.carousel.carousel-slider').carousel({
@@ -59,6 +78,8 @@ export class SiteComponent implements OnInit {
       });
       this.galloaded = true;
     });
+
+  
   }
 
   //taptarget test
@@ -68,18 +89,13 @@ export class SiteComponent implements OnInit {
 
 
 
-  showWork() {
+  showWork(_workNumber) {
+    this.edSer.currentWork = _workNumber;
+    console.log('workitem =  ' + _workNumber);
     // open up the modal
-    $('#modal1').modal('open');
-    $('.carousel.carousel-slider').carousel({
-      fullWidth: true,
-      indicators: true,
-      duration: 200
-    });
+    this.router.navigate(['/work']);
 
-    //setInterval(function () {
-    //  $('.carousel').carousel('next');
-    //}, 5000); // every 2 seconds
+ 
   }
 
   imageGalUpdate(_event) {

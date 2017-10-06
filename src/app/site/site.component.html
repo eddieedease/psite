@@ -62,8 +62,7 @@
                 <div class="card ">
                     <div class="card-content ">
                         <span class="card-title"><b>Welkom,</b> </span>
-                        <p>op website van zelfstandig <b>programmeur</b>/<b>designer</b> Eddie Maas.</p>
-                        <p>Ik heb al jaren ervaring met het ontwikkelen voor content voor voornamelijk het web.</p>
+                        <p>op website van zelfstandig <b>programmeur</b>/<b>designer</b> Eddie Maas. Ik heb al jaren ervaring met het ontwikkelen voor content voor voornamelijk het web.</p>
                     </div>
 
 
@@ -111,14 +110,14 @@
 
 
         <div class="row ">
-            <div *ngFor="let work of workArray | paginate: { itemsPerPage: 6, currentPage: p }" class="col s12 m4 l4">
+            <div *ngFor="let work of workArray| paginate: { itemsPerPage: 6, currentPage: p } ;let i = index " class="col s12 m4 l4">
                 <div class="card">
-                    <div routerLink="/work" style="height:200px;background-image: url('{{work.cover}}');background-size:cover" class="card-image waves-effect waves-block waves-light ">
+                    <div (click)="showWork(i)" [ngStyle]="{'background-image': 'url(' + work.cover + ')'}" style="height:200px;background-size:cover" class="card-image waves-effect waves-block waves-light ">
 
                     </div>
 
-                    <div routerLink="/work">
-                        <span (click)="showWork() " class="card-title grey-text text-darken-4 ">{{work.title}} <i class="mdi-navigation-more-vert right "></i></span>
+                    <div (click)="showWork(i)">
+                        <span class="card-title grey-text text-darken-4 ">{{work.title}} <i class="mdi-navigation-more-vert right "></i></span>
                     </div>
                 </div>
             </div>
@@ -139,19 +138,19 @@
                 <ul class="collapsible popout " data-collapsible="accordion">
                     <li>
                         <div class="collapsible-header "><i class="material-icons ">filter_drama</i>Wat is je toolset?</div>
-                        <div class="collapsible-body "><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
                     </li>
                     <li>
                         <div class="collapsible-header "><i class="material-icons ">filter_drama</i>Werk je alleen?</div>
-                        <div class="collapsible-body "><span>Jup, als bedrijf ben ik een one-man-army.</span></div>
+                        <div class="collapsible-body white"><span>Jup, als bedrijf ben ik een one-man-army.</span></div>
                     </li>
                     <li>
                         <div class="collapsible-header "><i class="material-icons ">place</i>Ontwikkel je ook Wordpress?</div>
-                        <div class="collapsible-body "><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
                     </li>
                     <li>
                         <div class="collapsible-header "><i class="material-icons ">whatshot</i>Ik denk dat we samen kunnen werken!</div>
-                        <div class="collapsible-body "><span>Lorem ipsum dolor sit amet.</span></div>
+                        <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
                     </li>
                 </ul>
             </div>
