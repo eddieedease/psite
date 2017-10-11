@@ -22,6 +22,7 @@ export class EdSerService {
   serSetWorkNumber(_value) {
     this.cur_WorkNumber = _value;
     console.log('Service Var Worknumber = ' + this.cur_WorkNumber);
+    this.subjWorkNumber.next(this.cur_WorkNumber);
   }
 
   serGetWorkNumber() {

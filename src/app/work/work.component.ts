@@ -26,8 +26,7 @@ import {EdSerService} from '../ed-ser.service';
 @Component({
   selector: 'app-work',
   templateUrl: './work.component.html',
-  styleUrls: ['./work.component.css'],
-  providers: [EdSerService]
+  styleUrls: ['./work.component.css']
 })
 export class WorkComponent implements OnInit, OnDestroy {
   json;
@@ -71,11 +70,14 @@ export class WorkComponent implements OnInit, OnDestroy {
   ngOnInit() {
 
     this.edSer.serGetWorkNumber();
-    console.log(this.edSer.cur_WorkNumber);
+
+    console.log('this is triggered when');
+    console.log(this.edSer);
     
     this.subWorkNumber = this.edSer.subjWorkNumber.subscribe((value) => {
+      console.log("Deez trigger niet");
       this.workNumber = value;
-      console.log('check ' + value);
+      console.log(value);
     });
 
     

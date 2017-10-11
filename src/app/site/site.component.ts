@@ -27,8 +27,7 @@ let thisComponent;
 @Component({
   selector: 'app-site',
   templateUrl: './site.component.html',
-  styleUrls: ['./site.component.css'],
-  providers: [EdSerService]
+  styleUrls: ['./site.component.css']
 })
 
 
@@ -91,9 +90,10 @@ export class SiteComponent implements OnInit {
 
 
   showWork(whichnum) {
-    this.router.navigate(['/work']);
+    
     this.edSer.serSetWorkNumber(whichnum);
     console.log(whichnum);
+    this.router.navigate(['/work']);
     
   }
 
