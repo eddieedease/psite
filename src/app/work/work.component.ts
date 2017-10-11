@@ -1,7 +1,11 @@
 import {
   Component,
-  OnInit
+  OnInit,
+  OnDestroy
 } from '@angular/core';
+
+import { Subscription } from 'rxjs/Subscription';
+
 import {
   NgxGalleryOptions,
   NgxGalleryImage,
@@ -25,15 +29,23 @@ import {EdSerService} from '../ed-ser.service';
   styleUrls: ['./work.component.css'],
   providers: [EdSerService]
 })
-export class WorkComponent implements OnInit {
+export class WorkComponent implements OnInit, OnDestroy {
   json;
   galloaded;
   workArray = [];
-  currentWorkObject;
+
+  
 
   public p;
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
+
+  subWorkNumber;
+  workNumber;
+  
+
+  
+  
 
 
 
@@ -49,19 +61,30 @@ export class WorkComponent implements OnInit {
         this.workArray = $.map(this.json, function (el) {
           return el;
         });
-        // Get the right value (var from service)
-        this.currentWorkObject = this.workArray[this.edSer.currentWork];
-        console.log(this.edSer.currentWork);
-        console.log(this.currentWorkObject);
       },
       error => console.error(error));
   }
 
-  ngOnInit() {
-    // start empty
-    this.galleryImages = [];
-    // Get the right worknumber
+    
 
+  // gets called when initializing component
+  ngOnInit() {
+
+    this.edSer.serGetWorkNumber();
+    console.log(this.edSer.cur_WorkNumber);
+    
+    this.subWorkNumber = this.edSer.subjWorkNumber.subscribe((value) => {
+      this.workNumber = value;
+      console.log('check ' + value);
+    });
+
+    
+
+    // trigger
+
+    
+
+    this.galleryImages = [];
     this.galleryOptions = [{
         width: '600px',
         height: '400px',
@@ -99,16 +122,9 @@ export class WorkComponent implements OnInit {
         big: 'assets/colpick1.png'
       }
     ];
-
-
-
-
-
-
-
-
   }
 
+  ngOnDestroy() {
 
-
+  }
 }

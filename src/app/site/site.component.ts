@@ -21,6 +21,9 @@ import {EdSerService} from '../ed-ser.service';
 // Needed for Jquery
 // declare var $: any;
 
+let thisComponent;
+
+
 @Component({
   selector: 'app-site',
   templateUrl: './site.component.html',
@@ -28,13 +31,14 @@ import {EdSerService} from '../ed-ser.service';
   providers: [EdSerService]
 })
 
+
+
 export class SiteComponent implements OnInit {
-  
+
   json;
+  thisComponent = this;
   galloaded;
   workArray = [];
-  
-
   public p;
 
   // tslint:disable-next-line:max-line-length
@@ -78,30 +82,23 @@ export class SiteComponent implements OnInit {
       });
       this.galloaded = true;
     });
-
-  
   }
 
-  //taptarget test
   debugClick () {
     $('.tap-target').tapTarget('open');
   }
 
 
 
-  showWork(_workNumber) {
-    this.edSer.currentWork = _workNumber;
-    console.log('workitem =  ' + _workNumber);
-    // open up the modal
+  showWork(whichnum) {
     this.router.navigate(['/work']);
-
- 
+    this.edSer.serSetWorkNumber(whichnum);
+    console.log(whichnum);
+    
   }
+
 
   imageGalUpdate(_event) {
     console.log(_event);
   }
-
-  
-
 }
