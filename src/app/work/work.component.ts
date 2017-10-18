@@ -33,20 +33,12 @@ export class WorkComponent implements OnInit, OnDestroy {
   galloaded;
   workArray = [];
 
-  
-
   public p;
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[];
 
   subWorkNumber;
   workNumber;
-  
-
-  
-  
-
-
 
   constructor(http_: Http, private sanitizer: DomSanitizer, private edSer: EdSerService) {
     // loading the workarray
@@ -69,22 +61,9 @@ export class WorkComponent implements OnInit, OnDestroy {
   // gets called when initializing component
   ngOnInit() {
 
-    this.edSer.serGetWorkNumber();
-
-    console.log('this is triggered when');
-    console.log(this.edSer);
     
-    this.subWorkNumber = this.edSer.subjWorkNumber.subscribe((value) => {
-      console.log("Deez trigger niet");
-      this.workNumber = value;
-      console.log(value);
-    });
-
-    
-
-    // trigger
-
-    
+    //
+    console.log('worknumber is ' + this.edSer.cur_WorkNumber);
 
     this.galleryImages = [];
     this.galleryOptions = [{
