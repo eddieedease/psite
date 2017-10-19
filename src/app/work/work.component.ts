@@ -62,7 +62,7 @@ export class WorkComponent implements OnInit, OnDestroy {
   ngOnInit() {
 
     
-    //
+    window.scrollTo(0, 0);
     console.log('worknumber is ' + this.edSer.cur_WorkNumber);
 
     this.galleryImages = [];
