@@ -4,7 +4,9 @@ import {
   OnDestroy
 } from '@angular/core';
 
-import { Subscription } from 'rxjs/Subscription';
+import {
+  Subscription
+} from 'rxjs/Subscription';
 
 import {
   NgxGalleryOptions,
@@ -20,7 +22,9 @@ import {
 import 'rxjs/add/operator/map';
 // Needed for Jquery
 // declare var $: any;
-import {EdSerService} from '../ed-ser.service';
+import {
+  EdSerService
+} from '../ed-ser.service';
 
 
 @Component({
@@ -35,37 +39,41 @@ export class WorkComponent implements OnInit, OnDestroy {
 
   public p;
   galleryOptions: NgxGalleryOptions[];
-  galleryImages: NgxGalleryImage[];
+  galleryImages: NgxGalleryImage[] = [];
 
   subWorkNumber;
   workNumber;
 
-  constructor(http_: Http, private sanitizer: DomSanitizer, private edSer: EdSerService) {
-    // loading the workarray
-    http_.get('assets/data.json')
-    .map(response => response.json())
-    .subscribe(
-      article => {
-        // GET JSON Object --> Make ARRAY
-        this.json = article;
-        console.log(this.json);
-        this.workArray = $.map(this.json, function (el) {
-          return el;
-        });
-      },
-      error => console.error(error));
+  currentWorkObject;
+
+  constructor(private http_: Http, private sanitizer: DomSanitizer, private edSer: EdSerService) {
+
   }
 
-    
+
 
   // gets called when initializing component
   ngOnInit() {
-
-    
+    // first scroll to top on init
     window.scrollTo(0, 0);
-    console.log('worknumber is ' + this.edSer.cur_WorkNumber);
 
-    this.galleryImages = [];
+    // loading the workarray
+    this.http_.get('assets/data.json')
+      .map(response => response.json())
+      .subscribe(
+        article => {
+          // GET JSON Object --> Make ARRAY
+          this.json = article;
+          this.workArray = $.map(this.json, function (el) {
+            return el;
+          });
+          this.setUpCurrentObject();
+          // push into array
+        },
+        error => console.error(error));
+
+
+
     this.galleryOptions = [{
         width: '600px',
         height: '400px',
@@ -90,19 +98,49 @@ export class WorkComponent implements OnInit, OnDestroy {
         preview: false
       }
     ];
+  }
 
-    this.galleryImages = [{
-        small: 'assets/contact.png',
-        medium: 'assets/contact.png',
-        big: 'assets/contact.png',
-        description: 'asdasdsad'
-      },
-      {
-        small: 'assets/colpick1.png',
-        medium: 'assets/colpick1.png',
-        big: 'assets/colpick1.png'
-      }
-    ];
+  // prev or next work
+  // _direction can be 'prev' or 'next' String
+  cycleWork(_direction) {
+    
+    switch (_direction) {
+      case 'prev':
+        if (this.edSer.cur_WorkNumber === 0) {
+          this.edSer.cur_WorkNumber = this.workArray.length - 1;
+          console.log(this.edSer.cur_WorkNumber);
+        } else {
+          this.edSer.cur_WorkNumber = this.edSer.cur_WorkNumber - 1;
+        }
+
+        this.setUpCurrentObject();
+
+        break;
+      case 'next':
+        if (this.edSer.cur_WorkNumber === this.workArray.length - 1 ) {
+          this.edSer.cur_WorkNumber = 0;
+        } else {
+          this.edSer.cur_WorkNumber = this.edSer.cur_WorkNumber + 1;
+        }
+        
+        this.setUpCurrentObject();
+        break;
+    }
+    
+  }
+
+  setUpCurrentObject() {
+    console.log('setting up current object');
+    this.galleryImages = [];
+    this.currentWorkObject = this.workArray[this.edSer.cur_WorkNumber];
+    this.currentWorkObject.images.forEach(element => {
+      let imgobj = {
+        small: element,
+        medium: element,
+        big: element
+      };
+      this.galleryImages.push(imgobj);
+    });
   }
 
   ngOnDestroy() {

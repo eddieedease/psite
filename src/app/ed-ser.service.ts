@@ -12,7 +12,7 @@ import {
 @Injectable()
 export class EdSerService {
 
-  cur_WorkNumber = '';
+  cur_WorkNumber = 0;
 
   constructor() {
     console.log('Service is linked');
