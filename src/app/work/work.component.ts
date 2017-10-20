@@ -40,6 +40,7 @@ export class WorkComponent implements OnInit, OnDestroy {
   public p;
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[] = [];
+  workContentText: String = '';
 
   subWorkNumber;
   workNumber;
@@ -103,7 +104,7 @@ export class WorkComponent implements OnInit, OnDestroy {
   // prev or next work
   // _direction can be 'prev' or 'next' String
   cycleWork(_direction) {
-    
+
     switch (_direction) {
       case 'prev':
         if (this.edSer.cur_WorkNumber === 0) {
@@ -117,22 +118,34 @@ export class WorkComponent implements OnInit, OnDestroy {
 
         break;
       case 'next':
-        if (this.edSer.cur_WorkNumber === this.workArray.length - 1 ) {
+        if (this.edSer.cur_WorkNumber === this.workArray.length - 1) {
           this.edSer.cur_WorkNumber = 0;
         } else {
           this.edSer.cur_WorkNumber = this.edSer.cur_WorkNumber + 1;
         }
-        
+
         this.setUpCurrentObject();
         break;
     }
-    
+
   }
 
   setUpCurrentObject() {
     console.log('setting up current object');
     this.galleryImages = [];
     this.currentWorkObject = this.workArray[this.edSer.cur_WorkNumber];
+    // set content text
+    switch (this.edSer.cur_Language) {
+      case 'nl':
+        this.workContentText = this.workArray[this.edSer.cur_WorkNumber].wysignl;
+        break;
+      case 'en':
+        this.workContentText = this.workArray[this.edSer.cur_WorkNumber].wysigen;
+        break;
+
+
+    }
+
     this.currentWorkObject.images.forEach(element => {
       let imgobj = {
         small: element,

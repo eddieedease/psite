@@ -5,30 +5,34 @@
         "wysignl": "<b>Blabla</b> <br> Owyeaaa",
         "wysigen": "<b>Blabla</b> <br> Owyeaaa",
         "cover": "/assets/portfolio/etz.jpg",
+        "tags": ["",""],
         "images": ["assets/portfolio/etz.jpg", "assets/portfolio/etz2.jpg", "assets/portfolio/etz3.jpg", "assets/portfolio/etz4.jpg", "assets/portfolio/etz5.jpg"]
     },
     "Work2": {
         "title": "KennisCloud",
         "klant": "ETZ",
-        "wysignl": "<b>Blabla</b> <br> Owyeaaa",
+        "wysignl": "blasdadasda",
         "wysigen": "<b>Blabla</b> <br> Owyeaaa",
         "cover": "assets/portfolio/kc1.jpg",
+        "tags": ["",""],
         "images": ["assets/portfolio/kc1.jpg", "assets/portfolio/kc2.jpg", "assets/portfolio/kc3.jpg", "assets/portfolio/kc4.jpg", "assets/portfolio/kc5.jpg", "assets/portfolio/kc6.jpg"]
     },
     "Work3": {
         "title": "Picture it",
         "klant": "Gemeente Breda",
-        "wysignl": "<b>Blabla</b> <br> Owyeaaa",
+        "wysignl": "werwerewrwerwerew",
         "wysigen": "<b>Blabla</b> <br> Owyeaaa",
         "cover": "assets/portfolio/pictureit.jpg",
+        "tags": ["",""],
         "images": ["assets/portfolio/pictureit.jpg", "assets/portfolio/pictureit2.jpg", "assets/portfolio/pictureit3.jpg", "assets/portfolio/pictureit5.jpg"]
     },
-    "Work5": {
+    "Work4": {
         "title": "Kracht in kaart",
         "klant": "Avans - afstuderen",
-        "wysignl": "<b>Blabla</b> <br> Owyeaaa",
+        "wysignl": "zxcvzxvczvzx",
         "wysigen": "<b>Blabla</b> <br> Owyeaaa",
         "cover": "assets/portfolio/krachtinkaart1.jpg",
+        "tags": ["",""],
         "images": ["assets/portfolio/krachtinkaart1.jpg", "assets/portfolio/krachtinkaart2.jpg", "assets/portfolio/krachtinkaart3.jpg", "assets/portfolio/krachtinkaart4.jpg", "assets/portfolio/krachtinkaart5.jpg"]
     }
 }

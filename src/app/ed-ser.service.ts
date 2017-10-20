@@ -13,6 +13,7 @@ import {
 export class EdSerService {
 
   cur_WorkNumber = 0;
+  cur_Language = 'nl';
 
   constructor() {
     console.log('Service is linked');
