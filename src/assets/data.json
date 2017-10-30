@@ -4,7 +4,7 @@
         "klant": "Elisabeth-Tweesteden Ziekenhuis (ETZ)",
         "wysignl": "<b>Blabla</b> <br> Owyeaaa",
         "wysigen": "<b>Blabla</b> <br> Owyeaaa",
-        "cover": "/assets/portfolio/etz.jpg",
+        "cover": "assets/portfolio/etz.jpg",
         "tags": ["",""],
         "images": ["assets/portfolio/etz.jpg", "assets/portfolio/etz2.jpg", "assets/portfolio/etz3.jpg", "assets/portfolio/etz4.jpg", "assets/portfolio/etz5.jpg"]
     },
