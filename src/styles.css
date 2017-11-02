@@ -1,5 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
-#sidenav-overlay{
+#sidenav-overlay {
     z-index: 0 !important;
+}
+
+.ngx-gallery-arrow-right {
+    color: red !important;
+}
+
+.ngx-gallery-arrow-left {
+    color: red !important;
 }

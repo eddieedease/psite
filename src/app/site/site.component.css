@@ -1,4 +1,190 @@
+.framed {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-size: cover;
+    background-clip: content-box;
+    background-color: #f66f6f;
+    box-sizing: border-box;
+    position: relative;
+    margin: auto;
+    top: 30px;
+    font: 400 2em/180px 'Oswald', sans-serif;
+    color: #fbfbfb;
+    text-indent: 20px;
+}
+
+
 /* Custom Stylesheet */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.bg--red {
+    background-color: #ed6c63;
+}
+
+.c--white {
+    color: #fff;
+}
+
+.p1 {
+    padding: 1rem;
+}
+
+.px1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.py1 {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.pt1 {
+    padding-top: 1rem;
+}
+
+.pr1 {
+    padding-right: 1rem;
+}
+
+.pb1 {
+    padding-bottom: 1rem;
+}
+
+.pl1 {
+    padding-left: 1rem;
+}
+
+.p2 {
+    padding: 2rem;
+}
+
+.px2 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.py2 {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.pt2 {
+    padding-top: 2rem;
+}
+
+.pr2 {
+    padding-right: 2rem;
+}
+
+.pb2 {
+    padding-bottom: 2rem;
+}
+
+.pl2 {
+    padding-left: 2rem;
+}
+
+.p3 {
+    padding: 3rem;
+}
+
+.px3 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.py3 {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+.pt3 {
+    padding-top: 3rem;
+}
+
+.pr3 {
+    padding-right: 3rem;
+}
+
+.pb3 {
+    padding-bottom: 3rem;
+}
+
+.pl3 {
+    padding-left: 3rem;
+}
+
+.p4 {
+    padding: 4rem;
+}
+
+.px4 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.py4 {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+.pt4 {
+    padding-top: 4rem;
+}
+
+.pr4 {
+    padding-right: 4rem;
+}
+
+.pb4 {
+    padding-bottom: 4rem;
+}
+
+.pl4 {
+    padding-left: 4rem;
+}
+
+.a--center {
+    text-align: center;
+}
+
+.banner {
+    right: -54px;
+    top: 35px;
+    z-index: 9999;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.title {
+    bottom: 0;
+    display: inline-block;
+    height: 1em;
+    left: 0;
+    margin: auto;
+    right: 0;
+    top: 0;
+}
 
 
 /**
@@ -311,4 +497,8 @@ footer.page-footer {
     background-position: center bottom;
     animation: animatedBackground 1200s linear infinite;
     z-index: -10;
+}
+
+.ngx-gallery-arrow-right .ngx-gallery-arrow-left {
+    color: red !important
 }
