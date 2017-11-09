@@ -1,5 +1,15 @@
 {
-    "Work": {
+
+    "Work1": {
+        "title": "Kracht in kaart",
+        "klant": "Avans - afstuderen",
+        "wysignl": "zxcvzxvczvzx",
+        "wysigen": "<b>Blabla</b> <br> Owyeaaa",
+        "cover": "assets/portfolio/krachtinkaart1.jpg",
+        "tags": ["",""],
+        "images": ["assets/portfolio/krachtinkaart1.jpg", "assets/portfolio/krachtinkaart2.jpg", "assets/portfolio/krachtinkaart3.jpg", "assets/portfolio/krachtinkaart4.jpg", "assets/portfolio/krachtinkaart5.jpg"]
+    },
+    "Work2": {
         "title": "ETZ E-Learning",
         "klant": "Elisabeth-Tweesteden Ziekenhuis (ETZ)",
         "wysignl": "<b>Blabla</b> <br> Owyeaaa",
@@ -8,7 +18,7 @@
         "tags": ["",""],
         "images": ["assets/portfolio/etz.jpg", "assets/portfolio/etz2.jpg", "assets/portfolio/etz3.jpg", "assets/portfolio/etz4.jpg", "assets/portfolio/etz5.jpg"]
     },
-    "Work2": {
+    "Work3": {
         "title": "KennisCloud",
         "klant": "ETZ",
         "wysignl": "blasdadasda",
@@ -17,7 +27,7 @@
         "tags": ["",""],
         "images": ["assets/portfolio/kc1.jpg", "assets/portfolio/kc2.jpg", "assets/portfolio/kc3.jpg", "assets/portfolio/kc4.jpg", "assets/portfolio/kc5.jpg", "assets/portfolio/kc6.jpg"]
     },
-    "Work3": {
+    "Work4": {
         "title": "Picture it",
         "klant": "Gemeente Breda",
         "wysignl": "werwerewrwerwerew",
@@ -26,7 +36,7 @@
         "tags": ["",""],
         "images": ["assets/portfolio/pictureit.jpg", "assets/portfolio/pictureit2.jpg", "assets/portfolio/pictureit3.jpg", "assets/portfolio/pictureit5.jpg"]
     },
-    "Work4": {
+    "Work5": {
         "title": "Kracht in kaart",
         "klant": "Avans - afstuderen",
         "wysignl": "zxcvzxvczvzx",

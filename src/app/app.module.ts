@@ -17,12 +17,14 @@ import { SiteComponent } from './site/site.component';
 import { WorkComponent } from './work/work.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { StepperComponent } from './stepper/stepper.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 
 const appRoutes: Routes = [
   { path: 'site', component: SiteComponent },
   { path: 'work', component: WorkComponent },
+  { path: 'blog', component: BlogComponent },
   { path: '404', component: NotfoundComponent },
   { path: '',
     redirectTo: '/site',
@@ -37,7 +39,8 @@ const appRoutes: Routes = [
     SiteComponent,
     WorkComponent,
     NotfoundComponent,
-    StepperComponent
+    StepperComponent,
+    BlogComponent
   ],
   imports: [
     RouterModule.forRoot(

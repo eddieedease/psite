@@ -48,7 +48,6 @@ export class SiteComponent implements OnInit {
         article => {
           // GET JSON Object --> change to array
           this.json = article;
-          
           console.log(this.json);
           this.workArray = $.map(this.json, function (el) {
             return el;
@@ -59,9 +58,6 @@ export class SiteComponent implements OnInit {
 
 
   ngOnInit() {
-
-    
-
     $(document).ready(function () {
       $('.button-collapse').sideNav({
         menuWidth: 350, // Default is 240
