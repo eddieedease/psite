@@ -11,3 +11,7 @@
 .ngx-gallery-arrow-left {
     color: red !important;
 }
+
+.row {
+    margin-bottom: 0 !important;
+}
