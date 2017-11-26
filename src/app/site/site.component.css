@@ -225,13 +225,14 @@ a {
 .headd {
     /* background-image: url('../../assets/head.jpg'); */
     background-size: cover;
+    background-color: aliceblue;
     text-align: center;
     padding-top: 1%;
 }
 
 .headd h3 {
     font-weight: 500;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 .headd h5 {

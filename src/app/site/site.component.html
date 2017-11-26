@@ -89,7 +89,7 @@
 
 
 <div class="z-depth-1">
-  <div class="headd bg_color" style="margin-bottom:0px;padding-bottom:10px">
+  <div class="headd" style="margin-bottom:0px;padding-bottom:10px">
 
     <div class="container">
       <img class="responsive-img" src="assets/banner.png">
@@ -150,7 +150,7 @@
 <div class="z-depth-1" >
   <div class="headd bg_color" style="padding-top:15px;padding-bottom:15px;">
     <h5>Diensten:</h5>
-    <br>
+    <br><br><br>
     <div class="container">
       <div class="row" >
 
@@ -194,7 +194,7 @@
 
 
 
-    <div class="row ">
+    <div class="row">
       <div *ngFor="let work of workArray| paginate: { itemsPerPage: 6, currentPage: p } ;let i = index " class="col s12 m4 l4">
         <div class="card">
           <div (click)="showWork(i)" [ngStyle]="{'background-image': 'url(' + work.cover + ')'}" style="height:200px;background-size:cover"
@@ -217,7 +217,7 @@
   </div>
 </div>
 
-<div class="z-depth-1 bg_color">
+<div class="z-depth-1 headd">
   <div style="margin-bottom:0px;padding-bottom:10px;padding-top:20px;min-height:200px">
     <div class="container" style="padding-top:15px;padding-bottom:15px;">
       <div class="row">
@@ -225,16 +225,16 @@
           <img class="responsive-img" style="max-width:370px" src="assets/resp.png">
         </div>
         <div class="col s12 m6 l6">
-                <h3 class="white-text">Frisse techniek</h3>
-                <p class="white-text">Met de sites/apps die geleverd worden kun je jaren vooruit. Natuurlijk is alles super-responsive, zodat het op alle apparaten goed te bekijken is.</p>
+                <h3 >Frisse techniek</h3>
+                <p>Met de sites/apps die geleverd worden kun je jaren vooruit. Natuurlijk is alles super-responsive, zodat het op alle apparaten goed te bekijken is.</p>
               </div>
 
       </div>
 
       <div class="row">
         <div class="col s12 m6 l6">
-                <h3 class="white-text">Maatwerk</h3>
-                <p class="white-text">Elk product is een compleet op maat voor uw specifieke doeleinden.</p>
+                <h3>Maatwerk</h3>
+                <p>Elk product is een compleet op maat voor uw specifieke doeleinden.</p>
                </div>
         <div class="col s12 m6 l6 center">
           <img class="responsive-img" style="max-width:370px" src="assets/office.png">
