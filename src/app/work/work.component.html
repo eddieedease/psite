@@ -6,8 +6,10 @@
 
     <div class="row">
       <div class="col m2">
-
-
+        <p>Projectnavigatie:</p>
+        <a (click)="cycleWork('prev')" class="btn-flat btn-large white-text waves-effect waves-light teal">
+          <=</a>
+            <a (click)="cycleWork('next')" class="btn-flat white-text btn-large waves-effect waves-light teal">=></a>
 
       </div>
       <div class="col s12 m10">
@@ -25,9 +27,7 @@
             <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
 
             <br><br>
-            <a (click)="cycleWork('prev')" class="btn-floating  btn-large waves-effect waves-light teal">
-                <=</a>
-                  <a (click)="cycleWork('next')" class="btn-floating  btn-large waves-effect waves-light teal">=></a>
+            
       </div>
 
     </div>
