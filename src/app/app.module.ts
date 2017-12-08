@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
-import {Ng2PaginationModule} from 'ng2-pagination'; 
+import {Ng2PaginationModule} from 'ng2-pagination';
 import { RouterModule, Routes } from '@angular/router';
 
 
@@ -27,7 +27,7 @@ const appRoutes: Routes = [
   { path: 'blog', component: BlogComponent },
   { path: '404', component: NotfoundComponent },
   { path: '',
-    redirectTo: '/site',
+    redirectTo: 'site',
     pathMatch: 'full'
   },
   { path: '**', component: NotfoundComponent }

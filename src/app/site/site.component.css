@@ -245,7 +245,7 @@ a {
     font-weight: 500;
     color: #078490;
     display: inline-block;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     border-radius: 20px;
 }
 
@@ -490,4 +490,12 @@ footer.page-footer {
 
 .ngx-gallery-arrow-right .ngx-gallery-arrow-left {
     color: red !important
+}
+
+
+.card-inline {
+    display: inline-block;
+}
+.card-inline .card-image img {
+    all: initial;
 }
