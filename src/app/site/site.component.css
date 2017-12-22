@@ -184,6 +184,11 @@ a {
  #50514f
  #f25f5c */
 
+ .section{
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+ }
+
 .first_color {
     background-color: #E9446D !important
 }
@@ -208,6 +213,10 @@ a {
     background-color: #f5f5f5  !important
 }
 
+.bg_color_blue {
+    background-color: #013A4C  !important
+}
+
 .default_color_text {
     color: #fff !important
 }
@@ -227,7 +236,6 @@ a {
     background-size: cover;
     background-color: #f5f5f5;
     text-align: center;
-    padding-top: 1%;
     /* height: 100%;
     background: repeating-linear-gradient(-45deg, transparent, transparent 1em, rgba(127, 215, 245, 0.4) 0, rgba(127, 215, 245, 0.1) 2em, transparent 0, transparent 1em, rgba(127, 215, 245, 0.3) 0, rgba(127, 215, 245, 0.2) 4em, transparent 0, transparent 1em, rgba(192, 235, 250, 0.6) 0, rgba(192, 235, 250, 0.2) 2em), repeating-linear-gradient(45deg, transparent, transparent 1em, rgba(127, 215, 245, 0.4) 0, rgba(127, 215, 245, 0.1) 2em, transparent 0, transparent 1em, rgba(127, 215, 245, 0.3) 0, rgba(127, 215, 245, 0.2) 4em, transparent 0, transparent 1em, rgba(192, 235, 250, 0.4) 0, rgba(192, 235, 250, 0.1) 2em), #FFF;
     background-blend-mode: multiply; */
