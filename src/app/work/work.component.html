@@ -1,19 +1,18 @@
-<div id="about" style="background-color:#2092d4" class="card section scrollspy">
+<div id="about" style="background-color:#2092d4;height:1300px"  class="card section scrollspy">
   
 
 
   <div class="card-content" style="background-color:#0277bd">
 
     <div class="row" >
-      <div class="col m2" >
-          <a routerLink="/site" class="waves-effect waves-light btn center-align">Terug naar site</a><br><br>
-        <p>Projectnavigatie:</p>
-        <a (click)="cycleWork('prev')" class="btn-flat btn-large white-text waves-effect waves-light teal">
-          <=</a>
-            <a (click)="cycleWork('next')" class="btn-flat white-text btn-large waves-effect waves-light teal">=></a>
-
-      </div>
-      <div class="col s12 m10">
+    
+      
+      <div class="col s12 m12 l5">
+        <div>  <a routerLink="/site" class="waves-effect waves-light btn center-align">Terug naar site</a><br><br>
+          <p>Projectnavigatie:</p>
+          <a (click)="cycleWork('prev')" class="btn-flat btn-large white-text waves-effect waves-light teal">
+            <=</a>
+              <a (click)="cycleWork('next')" class="btn-flat white-text btn-large waves-effect waves-light teal">=></a></div>
         <span class="card-title">Project</span>
        
             <div class="section">
@@ -25,10 +24,14 @@
             <div class="section">
               <b>Web Developer - Graphic Artist - User Experience Designer</b>
             </div>
-            <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+            
 
             <br><br>
             
+      </div>
+      <div class="col s12 m12 l5">
+        <div class="container"> <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery></div>
+       
       </div>
 
     </div>
