@@ -1,13 +1,13 @@
 {
 
     "Work1": {
-        "title": "Kracht in kaart",
-        "klant": "Avans - afstuderen",
-        "wysignl": "zxcvzxvczvzx",
+        "title": "Askme",
+        "klant": "Noordhoff Health",
+        "wysignl": "Askme superrr",
         "wysigen": "<b>Blabla</b> <br> Owyeaaa",
-        "cover": "assets/portfolio/krachtinkaart1.jpg",
+        "cover": "assets/portfolio/askme1.png",
         "tags": ["",""],
-        "images": ["assets/portfolio/krachtinkaart1.jpg", "assets/portfolio/krachtinkaart2.jpg", "assets/portfolio/krachtinkaart3.jpg", "assets/portfolio/krachtinkaart4.jpg", "assets/portfolio/krachtinkaart5.jpg"]
+        "images": ["assets/portfolio/askme1.png", "assets/portfolio/askme2.png" , "assets/portfolio/askme3.png", "assets/portfolio/askme4.png"]
     },
     "Work2": {
         "title": "ETZ E-Learning",
