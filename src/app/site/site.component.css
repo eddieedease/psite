@@ -1,5 +1,20 @@
 
 
+#bigTriangleColor {
+    fill: #0277bd;
+  }
+
+  #bigTriangleColor2 {
+    fill: #5ea4cc;
+  }
+
+  #bigTriangleColor3 {
+    fill: #408ebb;
+    background-color: #5ea4cc;
+    margin-bottom: -15px;
+  }
+
+
 
 
 /* Custom Stylesheet */
@@ -8,6 +23,16 @@
         font-size:1.2rem;
     }
 }
+
+.para {
+    background: url('/assets/wall1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-container {
+    height: 250px;
+  }
 
 
 

@@ -59,6 +59,14 @@ export class SiteComponent implements OnInit {
 
   ngOnInit() {
     $(document).ready(function () {
+
+
+     
+        $('.parallax').parallax();
+    
+
+
+
       $('.button-collapse').sideNav({
         menuWidth: 350, // Default is 240
         edge: 'left', // Choose the horizontal origin
