@@ -568,14 +568,14 @@ body{
   .or-divider::before{
     content: '';
     height: .125em;
-    background: white;
+    background: #fdce6c;
     flex: 1;
     margin: 0 .25em 0 0;
   }
   .or-divider::after{
     content: '';
     height: .125em;
-    background: white;
+    background: #fdce6c;
     flex: 1;
     margin: 0 0 0 .25em;
   }
