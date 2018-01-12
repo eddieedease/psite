@@ -76,9 +76,9 @@ export class WorkComponent implements OnInit, OnDestroy {
 
 
     this.galleryOptions = [{
-        width: '500px',
+        width: '400px',
         height: '400px',
-        thumbnailsColumns: 3,
+        thumbnailsColumns: 2,
         imageAnimation: NgxGalleryAnimation.Rotate,
         thumbnails: true
       },
