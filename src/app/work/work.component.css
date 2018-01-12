@@ -1,7 +1,11 @@
 body {
-    color: #fff !important;
+    
 }
 
 .card-content{
-    color: #fff !important;
+    
 }
+
+
+
+ngx-gallery /deep/ .ngx-gallery-arrow { color: #64b5f6;  }

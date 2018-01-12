@@ -23,7 +23,6 @@ import { BlogComponent } from './blog/blog.component';
 
 const appRoutes: Routes = [
   { path: 'site', component: SiteComponent },
-  { path: 'work', component: WorkComponent },
   { path: 'blog', component: BlogComponent },
   { path: '404', component: NotfoundComponent },
   { path: '',

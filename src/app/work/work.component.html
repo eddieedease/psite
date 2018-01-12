@@ -1,19 +1,19 @@
-<div class="container">
+
 <div id="about"  class="card section scrollspy">
   
 
 
-  <div class="card-content" style="background-color:#0277bd">
+  <div class="card-content" >
 
     <div class="row" >
     
       
       <div class="col s12 m12 l5">
-        <div>  <a routerLink="/site" class="waves-effect waves-light btn center-align">Terug naar site</a><br><br>
+        <div><br><br>
           <p>Projectnavigatie:</p>
-          <a (click)="cycleWork('prev')" class="btn-flat btn-large white-text waves-effect waves-light teal">
+          <a (click)="cycleWork('prev')" class="btn-flat rounded btn-large waves-effect waves-light teal">
             <=</a>
-              <a (click)="cycleWork('next')" class="btn-flat white-text btn-large waves-effect waves-light teal">=></a></div>
+              <a (click)="cycleWork('next')" class="btn-flat btn-large waves-effect waves-light teal">=></a></div>
         <span class="card-title">Project</span>
        
             <div class="section">
@@ -31,12 +31,11 @@
             
       </div>
       <div class="col s12 m12 l5">
-        <div class="container"> <ngx-gallery [options]="galleryOptions"  [images]="galleryImages"></ngx-gallery></div>
+        <div class="container" style="color:black !impotant"> <ngx-gallery [options]="galleryOptions"  [images]="galleryImages"></ngx-gallery></div>
        
       </div>
 
     </div>
 
   </div>
-</div>
 </div>

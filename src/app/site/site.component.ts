@@ -1,6 +1,6 @@
 import {
   Component,
-  OnInit,
+  OnInit, ViewChild
 } from '@angular/core';
 
 import {
@@ -16,6 +16,7 @@ import {
 } from '@angular/http';
 import 'rxjs/add/operator/map';
 
+import { WorkComponent } from '../work/work.component';
 import {EdSerService} from '../ed-ser.service';
 
 // Needed for Jquery
@@ -33,6 +34,8 @@ let thisComponent;
 
 
 export class SiteComponent implements OnInit {
+  
+  @ViewChild(WorkComponent) workComponent: WorkComponent;
 
   json;
   thisComponent = this;
@@ -103,9 +106,9 @@ export class SiteComponent implements OnInit {
   showWork(whichnum) {
     
     this.edSer.serSetWorkNumber(whichnum);
-    console.log(whichnum);
-    this.router.navigate(['/work']);
-    
+    this.workComponent.setUpCurrentObject();
+    //this.router.navigate(['/work']);
+    $('#modal1').modal('open');
   }
 
 
