@@ -9,16 +9,16 @@
     
       
       <div class="col s12 m12 l5">
-        <div><br><br>
-          <p>Projectnavigatie:</p>
-          <a (click)="cycleWork('prev')" class="btn-flat rounded btn-large waves-effect waves-light teal">
-            <=</a>
-              <a (click)="cycleWork('next')" class="btn-flat btn-large waves-effect waves-light teal">=></a></div>
+        <div>
+            <p>Projectnavigatie:</p>
+            <a (click)="cycleWork('prev')" class="btn-flat white-text  waves-effect waves-light blue lighten-2">
+              <=</a>
+                <a (click)="cycleWork('next')" class="btn-flat white-text waves-effect waves-light blue lighten-2">=></a><br><br>
+          </div>
         <span class="card-title">Project</span>
        
             <div class="section">
-              <p class="flow-text">
-                {{workContentText}}
+              <p [innerHTML]="workContentText">
               </p>
             </div>
             <div class="divider"></div>

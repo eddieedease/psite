@@ -2,14 +2,23 @@
 
     "Work1": {
         "title": "Askme",
-        "klant": "Noordhoff Health",
-        "wysignl": "Askme superrr",
+        "klant": "Noordhoff-Health",
+        "wysignl": "Askme is een webapplicatie waarin medewerkers van een zorg(instelling), snel handig informatie op kunnen zoeken. AskMe als tool haakt in op de noodzaak van EPSS (Electronic Perfomance support) op de werkvloer. Instellingen kunnen hun eigen objecten aanmaken en beheren. Dit alles draait in een webomgeving zodat elk apparaat met een browser ermee kan verbinden.<br><br>Binnen het hele AskMe project heb ik samengewerkt met Noordhoff-Health en heb ik gewerkt aan een SPA (Single Page Application) met behulp van Angular.",
         "wysigen": "<b>Blabla</b> <br> Owyeaaa",
-        "cover": "assets/portfolio/askme1.png",
+        "cover": "assets/portfolio/askme0.png",
         "tags": ["",""],
-        "images": ["assets/portfolio/askme1.png", "assets/portfolio/askme2.png" , "assets/portfolio/askme3.png", "assets/portfolio/askme4.png"]
+        "images": ["assets/portfolio/askme0.png", "assets/portfolio/askme2.png" , "assets/portfolio/askme3.png", "assets/portfolio/askme4.png"]
     },
     "Work2": {
+        "title": "Arcades (E)-waste",
+        "klant": "E-waste Arcades ",
+        "wysignl": "Supervette tekst arcades",
+        "wysigen": "<b>Blabla</b> <br> Owyeaaa",
+        "cover": "assets/portfolio/arcades1.jpg",
+        "tags": ["",""],
+        "images": ["assets/portfolio/arcades1.jpg", "assets/portfolio/arcades2.jpg" , "assets/portfolio/arcades3.jpg", "assets/portfolio/arcades4.jpg","assets/portfolio/arcades5.jpg","assets/portfolio/arcades6.jpg","assets/portfolio/arcades7.jpg","assets/portfolio/arcades8.png"]
+    },
+    "Work3": {
         "title": "ETZ E-Learning",
         "klant": "Elisabeth-Tweesteden Ziekenhuis (ETZ)",
         "wysignl": "<b>Blabla</b> <br> Owyeaaa",
@@ -18,7 +27,7 @@
         "tags": ["",""],
         "images": ["assets/portfolio/etz.jpg", "assets/portfolio/etz2.jpg", "assets/portfolio/etz3.jpg", "assets/portfolio/etz4.jpg", "assets/portfolio/etz5.jpg"]
     },
-    "Work3": {
+    "Work4": {
         "title": "KennisCloud",
         "klant": "ETZ",
         "wysignl": "blasdadasda",
@@ -27,7 +36,7 @@
         "tags": ["",""],
         "images": ["assets/portfolio/kc1.jpg", "assets/portfolio/kc2.jpg", "assets/portfolio/kc3.jpg", "assets/portfolio/kc4.jpg", "assets/portfolio/kc5.jpg", "assets/portfolio/kc6.jpg"]
     },
-    "Work4": {
+    "Work5": {
         "title": "Picture it",
         "klant": "Gemeente Breda",
         "wysignl": "werwerewrwerwerew",
@@ -35,14 +44,5 @@
         "cover": "assets/portfolio/pictureit.jpg",
         "tags": ["",""],
         "images": ["assets/portfolio/pictureit.jpg", "assets/portfolio/pictureit2.jpg", "assets/portfolio/pictureit3.jpg", "assets/portfolio/pictureit5.jpg"]
-    },
-    "Work5": {
-        "title": "Kracht in kaart",
-        "klant": "Avans - afstuderen",
-        "wysignl": "zxcvzxvczvzx",
-        "wysigen": "<b>Blabla</b> <br> Owyeaaa",
-        "cover": "assets/portfolio/krachtinkaart1.jpg",
-        "tags": ["",""],
-        "images": ["assets/portfolio/krachtinkaart1.jpg", "assets/portfolio/krachtinkaart2.jpg", "assets/portfolio/krachtinkaart3.jpg", "assets/portfolio/krachtinkaart4.jpg", "assets/portfolio/krachtinkaart5.jpg"]
     }
 }
