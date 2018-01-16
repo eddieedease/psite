@@ -37,6 +37,25 @@
         "images": ["assets/portfolio/kc1.jpg", "assets/portfolio/kc2.jpg", "assets/portfolio/kc3.jpg", "assets/portfolio/kc4.jpg", "assets/portfolio/kc5.jpg", "assets/portfolio/kc6.jpg"]
     },
     "Work5": {
+        "title": "Lodge aan zee",
+        "klant": "Lodge aan zee",
+        "wysignl": "werwerewrwerwerew",
+        "wysigen": "<b>Blabla</b> <br> Owyeaaa",
+        "cover": "assets/portfolio/lodgeaanzee1.png",
+        "tags": ["",""],
+        "images": ["assets/portfolio/lodgeaanzee1.png", "assets/portfolio/lodgeaanzee2.png", "assets/portfolio/lodgeaanzee3.png", "assets/portfolio/lodgeaanzee4.png"]
+    },
+    "Work6": {
+        "title": "Buurtrechten in beeld",
+        "klant": "lsabewoners.nl",
+        "wysignl": "werwerewrwerwerew",
+        "wysigen": "<b>Blabla</b> <br> Owyeaaa",
+        "cover": "assets/portfolio/lsa1.png",
+        "tags": ["",""],
+        "images": ["assets/portfolio/lsa1.png", "assets/portfolio/lsa2.png"]
+    }
+    ,
+    "Work7": {
         "title": "Picture it",
         "klant": "Gemeente Breda",
         "wysignl": "werwerewrwerwerew",

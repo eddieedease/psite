@@ -3,23 +3,26 @@
 }
 
 #bigTriangleColor2 {
-  fill: #5ea4cc;
+  fill: white;
   background-color: #0277bd;
   margin-bottom: -10px;
 }
 
 #bigTriangleColor3 {
   fill: #408ebb;
-  background-color: #5ea4cc;
+  background-color: white;
   margin-bottom: -15px;
 }
 
 #bigTriangleColor4 {
-  fill: #408ebb;
+  fill: white;
   background-color: #0277bd;
   margin-bottom: -15px;
 }
 
+.collapsible-header{
+background-color: #f4fafe
+}
 
 /* Custom Stylesheet */
 

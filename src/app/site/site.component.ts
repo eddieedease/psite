@@ -16,6 +16,8 @@ import {
 } from '@angular/http';
 import 'rxjs/add/operator/map';
 
+
+
 import { WorkComponent } from '../work/work.component';
 import {EdSerService} from '../ed-ser.service';
 
@@ -41,7 +43,12 @@ export class SiteComponent implements OnInit {
   thisComponent = this;
   galloaded;
   workArray = [];
-  public p;
+  public p = 1;
+
+  // workitems
+  itemsOnWork = 6;
+
+ 
 
   // tslint:disable-next-line:max-line-length
   constructor(private router: Router, private route: ActivatedRoute, private http_: Http, private sanitizer: DomSanitizer, private edSer: EdSerService) {
@@ -101,13 +108,14 @@ export class SiteComponent implements OnInit {
     $('.tap-target').tapTarget('open');
   }
 
-
+  onPageChange(_event) {
+    console.log(_event);
+  }
 
   showWork(whichnum) {
-    
-    this.edSer.serSetWorkNumber(whichnum);
+    let calcprojnumber = (this.itemsOnWork * (this.p - 1)) + whichnum;
+    this.edSer.serSetWorkNumber(calcprojnumber);
     this.workComponent.setUpCurrentObject();
-    //this.router.navigate(['/work']);
     $('#modal1').modal('open');
   }
 
