@@ -29,7 +29,9 @@ const appRoutes: Routes = [
     redirectTo: 'site',
     pathMatch: 'full'
   },
-  { path: '**', component: NotfoundComponent }
+  { path: '**',
+  redirectTo: 'site'
+ }
 ];
 
 @NgModule({

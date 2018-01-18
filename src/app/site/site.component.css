@@ -3,25 +3,31 @@
 }
 
 #bigTriangleColor2 {
-  fill: white;
-  background-color: #0277bd;
+  fill: #e3f2fd;
+  background-color: #408ebb;
   margin-bottom: -10px;
 }
 
 #bigTriangleColor3 {
   fill: #408ebb;
-  background-color: white;
+  background-color: #e3f2fd;
   margin-bottom: -15px;
 }
 
 #bigTriangleColor4 {
-  fill: white;
+  fill: #e3f2fd;
   background-color: #0277bd;
   margin-bottom: -15px;
 }
 
 .collapsible-header{
-background-color: #f4fafe
+background-color: #013A4C;
+color: white;
+border-radius: 5px;
+}
+
+.material-icons{
+  color:#e1f5fe;
 }
 
 /* Custom Stylesheet */
@@ -571,14 +577,14 @@ body{
   .or-divider::before{
     content: '';
     height: .125em;
-    background: #fdce6c;
+    background: #013A4C;
     flex: 1;
     margin: 0 .25em 0 0;
   }
   .or-divider::after{
     content: '';
     height: .125em;
-    background: #fdce6c;
+    background: #013A4C;
     flex: 1;
     margin: 0 0 0 .25em;
   }
