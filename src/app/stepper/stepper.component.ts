@@ -15,7 +15,7 @@ export class StepperComponent implements OnInit {
 
 
    anyThing() {
-  setTimeout(function(){ (<any>$('.stepper')).nextStep(); }, 1500);
+  setTimeout(function() { (<any>$('.stepper')).nextStep(); }, 1500);
 }
 
 
