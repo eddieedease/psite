@@ -3,7 +3,7 @@
     "Work1": {
         "title": "Askme",
         "klant": "Noordhoff-Health",
-        "wysignl": "Askme is een webapplicatie waarin medewerkers van een zorg(instelling), snel handig informatie op kunnen zoeken. AskMe als tool haakt in op de noodzaak van EPSS (Electronic Perfomance support) op de werkvloer. Instellingen kunnen hun eigen objecten aanmaken en beheren. Dit alles draait in een webomgeving zodat elk apparaat met een browser ermee kan verbinden.<br><br>Binnen het hele AskMe project heb ik samengewerkt met Noordhoff-Health en heb ik gewerkt aan een SPA (Single Page Application) met behulp van Angular.",
+        "wysignl": "Askme is een webapplicatie waarin medewerkers van een (zorg)instelling, snel handig informatie op kunnen zoeken. AskMe als tool haakt in op de noodzaak van EPSS (Electronic Perfomance support) op de werkvloer. Afnemers kunnen hun eigen objecten aanmaken en beheren. Dit alles draait in een webomgeving zodat elk apparaat met een browser ermee kan verbinden.<br><br>Binnen het hele AskMe project heb ik samengewerkt met Noordhoff-Health en heb ik gewerkt aan een SPA (Single Page Application) met behulp van Angular.",
         "wysigen": "<b>Blabla</b> <br> Owyeaaa",
         "cover": "assets/portfolio/askme0.png",
         "tags": ["",""],
