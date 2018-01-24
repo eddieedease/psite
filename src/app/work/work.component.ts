@@ -40,7 +40,12 @@ export class WorkComponent implements OnInit, OnDestroy {
   public p;
   galleryOptions: NgxGalleryOptions[];
   galleryImages: NgxGalleryImage[] = [];
+  
+  // the json file readings
   workContentText: String = '';
+  currentTitle = '';
+  currentCustomer = '';
+  currentTags = [];
 
   subWorkNumber;
   workNumber;
@@ -59,7 +64,7 @@ export class WorkComponent implements OnInit, OnDestroy {
     window.scrollTo(0, 0);
 
     // loading the workarray
-    this.http_.get('assets/data.json')
+    this.http_.get('assets/portfolio/data.json')
       .map(response => response.json())
       .subscribe(
         article => {
@@ -80,7 +85,9 @@ export class WorkComponent implements OnInit, OnDestroy {
         height: '400px',
         thumbnailsColumns: 4,
         imageAnimation: NgxGalleryAnimation.Slide,
-        thumbnails: true
+        thumbnails: true,
+        imageInfinityMove: true,
+        previewInfinityMove: true
         /* previewFullscreen: true */
       },
       // max-width 800
@@ -136,6 +143,11 @@ export class WorkComponent implements OnInit, OnDestroy {
     console.log('setting up current object');
     this.galleryImages = [];
     this.currentWorkObject = this.workArray[this.edSer.cur_WorkNumber];
+
+    this.currentTitle = this.workArray[this.edSer.cur_WorkNumber].title;
+    this.currentCustomer = this.workArray[this.edSer.cur_WorkNumber].customer;
+    this.currentTags = this.workArray[this.edSer.cur_WorkNumber].tags;
+
     // set content text
     switch (this.edSer.cur_Language) {
       case 'nl':

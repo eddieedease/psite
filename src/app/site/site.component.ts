@@ -52,7 +52,7 @@ export class SiteComponent implements OnInit {
 
   // tslint:disable-next-line:max-line-length
   constructor(private router: Router, private route: ActivatedRoute, private http_: Http, private sanitizer: DomSanitizer, private edSer: EdSerService) {
-    http_.get('assets/data.json')
+    http_.get('assets/portfolio/data.json')
       .map(response => response.json())
       .subscribe(
         article => {
