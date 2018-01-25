@@ -2,16 +2,16 @@
 
     "Work1": {
         "title": "Askme",
-        "customer": "https://www.noordhoff-health.nl/",
+        "customer": "Noordhoff-Health & PPZ",
         "wysignl": "Askme is een webapplicatie waarin medewerkers van een (zorg)instelling, snel handig informatie op kunnen zoeken. AskMe als tool haakt in op de noodzaak van EPSS (Electronic Perfomance support) op de werkvloer. Afnemers kunnen hun eigen objecten aanmaken en beheren. Dit alles draait in een webomgeving zodat elk apparaat met een browser ermee kan verbinden.<br><br>Binnen het hele AskMe project heb ik samengewerkt met Noordhoff-Health en heb ik gewerkt aan een SPA (Single Page Application) met behulp van Angular.",
         "wysigen": "<b>Blabla</b> <br> Owyeaaa",
         "cover": "assets/portfolio/askme0.png",
         "tags": ["sdfs","sdfs"],
-        "images": ["assets/portfolio/askme0.png", "assets/portfolio/askme2.png" , "assets/portfolio/askme3.png", "assets/portfolio/askme4.png"]
+        "images": ["assets/portfolio/askme0.png", "assets/portfolio/askme2.png" , "assets/portfolio/askme4.png", "assets/portfolio/askme5.png","assets/portfolio/askme3.png"]
     },
     "Work2": {
-        "title": "Arcades (E)-waste",
-        "customer": "https://ewastearcades.nl",
+        "title": "E-waste arcades",
+        "customer": "E-waste arcades",
         "wysignl": "Supervette tekst arcades",
         "wysigen": "<b>Blabla</b> <br> Owyeaaa",
         "cover": "assets/portfolio/arcades1.jpg",
@@ -19,8 +19,8 @@
         "images": ["assets/portfolio/arcades1.jpg", "assets/portfolio/arcades2.jpg" , "assets/portfolio/arcades3.jpg", "assets/portfolio/arcades4.jpg","assets/portfolio/arcades5.jpg","assets/portfolio/arcades6.jpg","assets/portfolio/arcades7.jpg","assets/portfolio/arcades8.png","assets/portfolio/arcades9.png"]
     },
     "Work3": {
-        "title": "ETZ E-Learning",
-        "customer": "https://etz.nl/",
+        "title": "ETZ E-Learning ",
+        "customer": "Elisabeth-TweeSteden Ziekenhuis)",
         "wysignl": "<b>Blabla</b> <br> Owyeaaa",
         "wysigen": "<b>Blabla</b> <br> Owyeaaa",
         "cover": "assets/portfolio/etz.jpg",
@@ -28,8 +28,8 @@
         "images": ["assets/portfolio/etz.jpg", "assets/portfolio/etz2.jpg", "assets/portfolio/etz3.jpg", "assets/portfolio/etz4.jpg", "assets/portfolio/etz5.jpg"]
     },
     "Work4": {
-        "title": "https://www.bibliotheekmb.nl/",
-        "customer": "ETZ",
+        "title": "KennisCloud",
+        "customer": "Bibliotheek midden-brabant",
         "wysignl": "blasdadasda",
         "wysigen": "<b>Blabla</b> <br> Owyeaaa",
         "cover": "assets/portfolio/kc1.jpg",
@@ -38,7 +38,7 @@
     },
     "Work5": {
         "title": "Lodge aan zee",
-        "customer": "http://lodgeaanzee.nl",
+        "customer": "Lodgeaanzee.nl",
         "wysignl": "werwerewrwerwerew",
         "wysigen": "<b>Blabla</b> <br> Owyeaaa",
         "cover": "assets/portfolio/lodgeaanzee1.png",
@@ -47,7 +47,7 @@
     },
     "Work6": {
         "title": "Buurtrechten in beeld",
-        "customer": "https://www.lsabewoners.nl/",
+        "customer": "LSA-bewoners",
         "wysignl": "werwerewrwerwerew",
         "wysigen": "<b>Blabla</b> <br> Owyeaaa",
         "cover": "assets/portfolio/lsa1.png",
@@ -56,7 +56,7 @@
     },
     "Work7": {
         "title": "Picture it",
-        "customer": "https://dropstuff.nl/ & https://www.breda.nl/",
+        "customer": "Gemeente Breda & Dropstuff",
         "wysignl": "werwerewrwerwerew",
         "wysigen": "<b>Blabla</b> <br> Owyeaaa",
         "cover": "assets/portfolio/pictureit.jpg",
@@ -65,7 +65,7 @@
     },
     "Work8": {
         "title": "Logo BenOK",
-        "customer": "https://benok.info/",
+        "customer": "Ben OK",
         "wysignl": "werwerewrwerwerew",
         "wysigen": "<b>Blabla</b> <br> Owyeaaa",
         "cover": "assets/portfolio/pictureit.jpg",

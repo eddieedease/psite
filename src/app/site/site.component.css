@@ -3,19 +3,19 @@
 }
 
 #bigTriangleColor2 {
-  fill: #e3f2fd;
+  fill: white;
   background-color: #408ebb;
   margin-bottom: -10px;
 }
 
 #bigTriangleColor3 {
   fill: #408ebb;
-  background-color: #e3f2fd;
+  background-color:white;
   margin-bottom: -15px;
 }
 
 #bigTriangleColor4 {
-  fill: #e3f2fd;
+  fill: white;
   background-color: #0277bd;
   margin-bottom: -15px;
 }
@@ -25,6 +25,8 @@ background-color: #0277bd;
 color: white;
 border-radius: 5px;
 }
+
+
 
 .material-icons{
   color:#e1f5fe;
@@ -577,14 +579,14 @@ body{
   .or-divider::before{
     content: '';
     height: .125em;
-    background: #013A4C;
+    background: #FFCF65;
     flex: 1;
     margin: 0 .25em 0 0;
   }
   .or-divider::after{
     content: '';
     height: .125em;
-    background: #013A4C;
+    background: #FFCF65;
     flex: 1;
     margin: 0 0 0 .25em;
   }
@@ -592,3 +594,7 @@ body{
   .or-divider.italic::after{
     transform: skew(-18deg)
   }
+
+
+
+ 
