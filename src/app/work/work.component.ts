@@ -137,6 +137,9 @@ export class WorkComponent implements OnInit, OnDestroy {
         break;
     }
 
+   
+    
+
   }
 
   setUpCurrentObject() {

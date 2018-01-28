@@ -22,7 +22,7 @@ import { WorkComponent } from '../work/work.component';
 import {EdSerService} from '../ed-ser.service';
 
 // Needed for Jquery
-// declare var $: any;
+declare var $: any;
 
 let thisComponent;
 
