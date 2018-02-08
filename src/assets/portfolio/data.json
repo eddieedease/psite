@@ -29,7 +29,7 @@
     "Work5": {
         "title": "Lodge aan zee",
         "customer": "Lodgeaanzee.nl",
-        "wysignl": "<a href='http://www.lodgeaanzee.nl' target='blank'>LodgeaanZee.nl</a> verhuurt een vakantiehuisje en ik heb voor hun een site verzorgd met een eigen custom CMS. De afbeeldingen en teksten kunnen ze zelf wijzigen en is ook een bookingssyteem ingebouwd.",
+        "wysignl": "<a href='http://www.lodgeaanzee.nl' target='blank'>LodgeaanZee.nl</a> verhuurt een vakantiehuisje en ik heb voor hun een site verzorgd met een eigen custom CMS. De afbeeldingen en teksten kunnen ze zelf wijzigen en er is ook een bookingssyteem in ingebouwd.",
         "wysigen": "<b>Blabla</b> <br> Owyeaaa",
         "cover": "assets/portfolio/lodgeaanzee1.png",
         "tags": ["AngularJS","PhP/mysql backend"],
