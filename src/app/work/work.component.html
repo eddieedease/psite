@@ -4,19 +4,24 @@
 
 
   <div class="card-content" >
-
+    <a (click)="cycleWork('prev')" class="btn-flat white-text  waves-effect waves-light blue lighten-2" style="border-radius:20px">
+      <<</a>
+        <a (click)="cycleWork('next')" class="btn-flat white-text waves-effect waves-light blue lighten-2" style="border-radius:20px;float:right">>></a>
     <div class="row" >
     
       
-      <div class="col s12 m12 l5">
+      <div class="col s12 m12 l7">
         <div>
             
-            <a (click)="cycleWork('prev')" class="btn-flat white-text  waves-effect waves-light blue lighten-2" style="border-radius:20px">
-              <<<<</a>
-                <a (click)="cycleWork('next')" class="btn-flat white-text waves-effect waves-light blue lighten-2" style="border-radius:20px">>>></a>
+           
                 <br>
                 <br>
               </div>
+              <div class="container" style="color:black !important"> <ngx-gallery [options]="galleryOptions"  [images]="galleryImages"></ngx-gallery></div>
+            
+      </div>
+      <div class="col s12 m12 l5">
+        
         <h4>{{currentTitle}}</h4>
           <hr>
             <p><b>Klant:</b> {{currentCustomer}}</p>
@@ -31,11 +36,6 @@
             
 
             <br><br>
-            
-      </div>
-      <div class="col s12 m12 l5">
-        <div class="container" style="color:black !important"> <ngx-gallery [options]="galleryOptions"  [images]="galleryImages"></ngx-gallery></div>
-       
       </div>
 
     </div>
