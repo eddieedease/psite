@@ -1,22 +1,22 @@
 #bigTriangleColor {
-  fill: #039be5;
+  fill: #00579c;
 }
 
 #bigTriangleColor2 {
   fill: white;
-  background-color: #408ebb;
+  background-color: #0d47a1;
   margin-bottom: -10px;
 }
 
 #bigTriangleColor3 {
-  fill: #408ebb;
+  fill: #0d47a1;
   background-color:white;
   margin-bottom: -15px;
 }
 
 #bigTriangleColor4 {
   fill: white;
-  background-color: #039be5;
+  background-color: #0d47a1;
   margin-bottom: -15px;
 }
 
@@ -279,6 +279,13 @@ a {
   background-color: #F0F0F0;
 }
 
+.edgradient{
+  background-image:
+    linear-gradient(
+      #039be5, #01579b
+    );
+}
+
 .headd {
   /* background-image: url('../../assets/head.jpg'); */
   background-size: cover;
@@ -295,12 +302,12 @@ a {
 }
 
 .headd h5 {
-  background-color: #fff;
+  background-color: #039be5;
   padding: 20px;
   font-weight: 340;
-  color: #00579c;
+  color: #fff;
   display: inline-block;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   border-radius: 20px;
 }
 
