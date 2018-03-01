@@ -48,6 +48,9 @@ export class SiteComponent implements OnInit {
   // workitems
   itemsOnWork = 3;
 
+  // boolean for showing more info
+  moreInfo = false;
+
  
 
   // tslint:disable-next-line:max-line-length
@@ -106,6 +109,14 @@ export class SiteComponent implements OnInit {
 
   debugClick () {
     $('.tap-target').tapTarget('open');
+  }
+
+  
+  toggleMoreInfo(){
+    this.moreInfo = true;
+    $(document).ready(function () {
+      $('.collapsible').collapsible();
+    });
   }
 
   onPageChange(_event) {

@@ -136,10 +136,10 @@
     <br>
     <br>
     <br>
-    <div class="row" style="background-color:#248b86;padding: 30px;border-radius: 10px">
+    <div class="row" style="background-color:#d1e9f1;padding: 30px;border-radius: 10px">
 
       <div class="col s12 m5 l5" >
-        <div class="flow-text" style="font-weight: 300" id="intro" class="scrollspy">
+        <div class="flow-text" style="font-weight: 300;color:#19242a" id="intro" class="scrollspy">
           <h5>Hallo!</h5>
           <p>Welkom op
             <b>edease.nl</b>. Als interaction developer help ik bedrijven met het bedenken, ontwerpen en realiseren van multimediaoplossingen.
@@ -180,25 +180,25 @@
           <br>
           <i class="material-icons medium" style="color:#fff">code</i>
           <br>
-          <p style="color:#003e5d">Development</p>
+          <p style="color:#003e5d"><b>Development</b></p>
         </div>
         <div class="col s6 m3 l3">
           <br>
           <i class="material-icons medium" style="color:#fff">web</i>
           <br>
-          <p style="color:#003e5d">Ontwerp/Drukwerk</p>
+          <p style="color:#003e5d"><b>Ontwerp/Drukwerk</b></p>
         </div>
         <div class="col s6 m3 l3">
           <br>
           <i class="material-icons medium" style="color:#fff">movie</i>
           <br>
-          <p style="color:#003e5d">Animaties</p>
+          <p style="color:#003e5d"><b>Animaties</b></p>
         </div>
         <div class="col s6 m3 l3 ">
           <br>
           <i class="material-icons medium" style="color:#fff">games</i>
           <br>
-          <p style="color:#003e5d">Games (HTML5)</p>
+          <p style="color:#003e5d"><b>Games (HTML5)</b></p>
         </div>
       </div>
       <br>
@@ -257,11 +257,11 @@
       <div class="col s12 m4 l4 center">
         <img class="responsive-img" src="assets/resp.png">
       </div>
-      <div class="col s12 m8 l8">
+      <div class="col s12 m8 l8" style="color:#fff">
         <br>
         <br>
         <br>
-        <h4 style="color:#19242a">Oplossingsgericht</h4>
+        <h4 >Oplossingsgericht</h4>
         <p>Ik denk graag mee over oplossingen waar bedrijven tegenaan lopen. Gebruiksvriendelijkheid staat daarmee bij mij hoog
           in het vaandel. Geen poespas dus, de eindgebruiker staat centraal. Qua ontwerp houd ik alles het liefst lekker
           modern en strak. Verder is het een kwestie van de juiste tools gebruiken voor ieder project, en ik ben niet bang
@@ -336,15 +336,19 @@
 
 
 
+<nav *ngIf="!moreInfo" style="height:150px;background-color:#003e5d">
+ <a (click)="toggleMoreInfo()" style="cursor:pointer"><div class="nav-wrapper"  style="padding:30px">
+    <a href="#!" class="brand-logo center" >Meer info?</a>
+  </div></a>
+</nav>
 
 
-
-<div class="section scrollspy" id="asdsadas" style="background-color:#003e5d">
+<div *ngIf="moreInfo" class="section scrollspy" id="asdsadas" style="background-color:#003e5d">
   <div class="container">
     <div class="row">
       <div class="col s12 m4 white-text">
         <br><br><br>
-        <h4 class="center">FAQ</h4>
+        <h4 class="center">Meer info</h4>
       </div>
       <div class="col s12 m8">
         
@@ -421,7 +425,7 @@
 
         </ul>
       </div>
-    </div>
+    </div><br><br><br>
   </div>
 </div>
 
@@ -434,12 +438,12 @@
     <div class="row ">
       <br>
       <p class="or-divider">Contact</p>
-      <br>
+      <br><br><br><br>
       <div class="col l6 s12 ">
         <form class="col s12">
           <div class="row center">
             <A HREF="mailto:eddie@edease.nl">
-              <h6 style="color:#19242a">Klik voor mail</h6>
+              <h6 style="color:#003e5d">Klik voor mail</h6>
 
               <i class="large material-icons white-text">contact_mail</i>
             </A>
@@ -449,14 +453,14 @@
       <div class="col l3 s12 left" style="text-align:left !important">
         <div class="row left">
 
+          <A HREF="mailto:eddie@edease.nl">
+          <p class="grey-text text-lighten-4">
+            <b >Email:</b> eddie@edease.nl</p></A>
+          <p class="grey-text text-lighten-4">
+            <b>Tel:</b> 06-13095856</p>
 
           <p class="grey-text text-lighten-4">
-            <b style="color:#19242a">Email:</b> eddie@edease.nl</p>
-          <p class="grey-text text-lighten-4">
-            <b style="color:#19242a">Tel:</b> 06-13095856</p>
-
-          <p class="grey-text text-lighten-4">
-            <b style="color:#19242a">KvK Nummer:</b> 58764852 </p>
+            <b>KvK Nummer:</b> 58764852 </p>
 
           <div class="col l4 offset-l2 s12">
 
@@ -470,7 +474,7 @@
         <ul>
           <li>
             <a class="grey-text text-lighten-3" target="_blanc" href="https://github.com/eddieedease">
-              <img src="assets/githublogo.png" width=75 class="img-fluid" alt="Responsive image">
+              <img src="assets/githublogo.png" width=50 class="img-fluid" alt="Responsive image">
             </a>
           </li>
         </ul>
