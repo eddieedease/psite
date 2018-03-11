@@ -3,14 +3,14 @@
 }
 
 #bigTriangleColor2 {
-  fill: #3fafa9;
-  background-color: #003e5d;
+  fill: #e8e7e5;
+  background-color: #353b55;
   margin-bottom: -10px;
 }
 
 #bigTriangleColor3 {
-  fill: #003e5d;
-  background-color:#3fafa9;
+  fill: #353b55;
+  background-color:#e8e7e5;
   margin-bottom: -15px;
 }
 
@@ -21,15 +21,15 @@
 }
 
 .collapsible-header{
-background-color: #165265;
-color: #ffeb09;
+background-color: #353b55;
+color: #fff;
 border-radius: 5px;
 }
 
 
 
 .material-icons{
-  color:#b1d3e6;
+  color:#ff8f00;
 }
 
 /* Custom Stylesheet */
@@ -238,7 +238,7 @@ a {
 }
 
 .first_color {
-  background-color:#165265 !important
+  background-color:#353b55 !important
 }
 
 .second_color {
@@ -258,7 +258,7 @@ a {
 }
 
 .bg_color {
-  background-color: #003e5d !important;
+  background-color: #353b55 !important;
   color: #fff !important;
 }
 
@@ -281,7 +281,7 @@ a {
 }
 
 .edgradient{
-  background-color:#3fafa9;
+  background-color:#e8e7e5;
 }
 
 .headd {
@@ -300,7 +300,7 @@ a {
 }
 
 .headd h5 {
-  background-color: #165265;
+  background-color: #353b55;
   padding: 20px;
   font-weight: 340;
   color: #fff;
@@ -579,7 +579,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color:#fff;
+    color:#353b55;
     font-size: 2em;
     margin: 0 1em;
   }
@@ -589,14 +589,14 @@ body{
   .or-divider::before{
     content: '';
     height: .125em;
-    background: #257a77;
+    background: #ff8f00;
     flex: 1;
     margin: 0 .25em 0 0;
   }
   .or-divider::after{
     content: '';
     height: .125em;
-    background: #257a77;
+    background: #ff8f00;
     flex: 1;
     margin: 0 0 0 .25em;
   }
