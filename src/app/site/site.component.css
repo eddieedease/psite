@@ -3,14 +3,14 @@
 }
 
 #bigTriangleColor2 {
-  fill: #e8e7e5;
-  background-color: #353b55;
+  fill: #fff;
+  background-color: #32b4c6;
   margin-bottom: -10px;
 }
 
 #bigTriangleColor3 {
-  fill: #353b55;
-  background-color:#e8e7e5;
+  fill: #268bc8;
+  background-color:#fff;
   margin-bottom: -15px;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .collapsible-header{
-background-color: #353b55;
+background-color: #268bc8;
 color: #fff;
 border-radius: 5px;
 }
@@ -29,7 +29,7 @@ border-radius: 5px;
 
 
 .material-icons{
-  color:#ff8f00;
+  color:#355470;
 }
 
 /* Custom Stylesheet */
@@ -238,7 +238,7 @@ a {
 }
 
 .first_color {
-  background-color:#353b55 !important
+  background-color:#30b3c6 !important
 }
 
 .second_color {
@@ -258,7 +258,7 @@ a {
 }
 
 .bg_color {
-  background-color: #353b55 !important;
+  background-color: #355470  !important;
   color: #fff !important;
 }
 
@@ -281,7 +281,7 @@ a {
 }
 
 .edgradient{
-  background-color:#e8e7e5;
+  background-color:#fff;
 }
 
 .headd {
@@ -299,13 +299,13 @@ a {
   /*text-transform: uppercase;*/
 }
 
-.headd h5 {
-  background-color: #353b55;
+.headd h6 {
+  background-color: #355470 ;
   padding: 20px;
   font-weight: 340;
   color: #fff;
   display: inline-block;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   border-radius: 20px;
 }
 
@@ -579,7 +579,7 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color:#353b55;
+    color:#268bc8;
     font-size: 2em;
     margin: 0 1em;
   }
@@ -589,14 +589,14 @@ body{
   .or-divider::before{
     content: '';
     height: .125em;
-    background: #ff8f00;
+    background: #30b3c6;
     flex: 1;
     margin: 0 .25em 0 0;
   }
   .or-divider::after{
     content: '';
     height: .125em;
-    background: #ff8f00;
+    background: #30b3c6;
     flex: 1;
     margin: 0 0 0 .25em;
   }
