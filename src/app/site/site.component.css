@@ -2,20 +2,24 @@
   fill: #3eb0aa;
 }
 
+#gradientFIll {
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+
 #bigTriangleColor2 {
-  fill: #fff;
+  fill: #f7f7f7;
   background-color: #32b4c6;
   margin-bottom: -10px;
 }
 
 #bigTriangleColor3 {
   fill: #268bc8;
-  background-color:#fff;
+  background-color:#f7f7f7;
   margin-bottom: -15px;
 }
 
 #bigTriangleColor4 {
-  fill: white;
+  fill: #f7f7f7;
   background-color: #3eb0aa;
   margin-bottom: -15px;
 }
