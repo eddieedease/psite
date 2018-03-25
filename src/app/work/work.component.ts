@@ -81,8 +81,7 @@ export class WorkComponent implements OnInit, OnDestroy {
 
 
     this.galleryOptions = [{
-        width: '500px',
-        height: '500px',
+        width: '100%',
         thumbnailsColumns: 4,
         imageAnimation: NgxGalleryAnimation.Slide,
         thumbnails: true,
@@ -92,9 +91,8 @@ export class WorkComponent implements OnInit, OnDestroy {
       },
       // max-width 800
       {
-        breakpoint: 800,
-        width: '90%',
-        height: '500px',
+        breakpoint: 1000,
+        width: '100%',
         imagePercent: 80,
         thumbnailsPercent: 20,
         thumbnailsMargin: 20,
