@@ -8,7 +8,7 @@
 
 #bigTriangleColor2 {
   fill: #f7f7f7;
-  background-color: #32b4c6;
+  background-color: #f7f7f7;
   margin-bottom: -10px;
 }
 
@@ -20,7 +20,7 @@
 
 #bigTriangleColor4 {
   fill: #f7f7f7;
-  background-color: #3eb0aa;
+  background-color: #f7f7f7;
   margin-bottom: -15px;
 }
 
@@ -45,7 +45,7 @@ border-radius: 5px;
 }
 
 .para {
-  background: url('/assets/wall1.png');
+  /* background: url('/assets/wall1.png'); */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -266,6 +266,14 @@ a {
   color: #fff !important;
 }
 
+.bg_color2 {
+  background-color: #06223b  !important;
+  color: #fff !important;
+}
+
+
+
+
 .bg_color_blue {
   background-color: #013A4C !important
 }
@@ -304,13 +312,13 @@ a {
 }
 
 .headd h6 {
-  background-color: #355470 ;
+  background-color: #d3e7f3;
   padding: 20px;
   font-weight: 460;
-  color: #fff;
+  color: #365370;
   display: inline-block;
-  font-size: 1.4rem;
-  border-radius: 20px;
+  font-size: 1.1rem;
+  border-radius: 90px;
 }
 
 #nav_f {

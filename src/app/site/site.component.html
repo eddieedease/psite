@@ -32,7 +32,7 @@
 
 <nav>
   <div class="navbar-fixed">
-    <nav class="bg_color" role="navigation">
+    <nav class="bg_color2" role="navigation">
       <div class="container">
         <div class="nav-wrapper">
           <ul class="right hide-on-med-and-down">
@@ -101,8 +101,8 @@
 
 
 <!--Intro and service-->
-<div style="background-image:url(assets/gradient.jpg); background-size: cover;">
-  <div class="headd" style="padding-bottom:30px;background-color:#f7f7f7">
+<div class="" >
+  <div class="headd bg_color" style="padding-bottom:30px;background-color:#f7f7f7">
 
 
     <br>
@@ -114,7 +114,7 @@
           <br>
           <br>
           <br>
-          <img class="responsive-img" src="assets/logo1b.png" style="max-width: 250px">
+          <img class="responsive-img" src="assets/logo1b.png" style="max-width: 200px">
         </div>
         <div class="col m12 l12 s12">
           <br>
@@ -136,7 +136,7 @@
     <br>
     <br>
     <br>
-    <div class="row" style="background-color:#fff;padding: 30px;border-radius: 10px">
+    <div class="row " style="background-color:#fff;padding: 30px;border-radius: 10px">
 
       <div class="col s12 m5 l5">
         <div class="flow-text" style="font-weight: 300;color:#19242a" id="intro" class="scrollspy">
@@ -181,33 +181,33 @@
 
         <div class="col s6 m3 l3 ">
           <br>
-          <i class="material-icons medium" style="color:#fff">code</i>
+          <i class="material-icons medium" style="color:#33b3c6">code</i>
           <br>
-          <p style="color:#fff">
+          <p style="color:#06223b">
             <b>Development</b>
           </p>
         </div>
         <div class="col s6 m3 l3">
           <br>
-          <i class="material-icons medium" style="color:#fff">web</i>
+          <i class="material-icons medium" style="color:#33b3c6">web</i>
           <br>
-          <p style="color:#fff">
+          <p style="color:#06223b">
             <b>Ontwerp/Drukwerk</b>
           </p>
         </div>
         <div class="col s6 m3 l3">
           <br>
-          <i class="material-icons medium" style="color:#fff">movie</i>
+          <i class="material-icons medium" style="color:#33b3c6">movie</i>
           <br>
-          <p style="color:#fff">
+          <p style="color:#06223b">
             <b>Animaties</b>
           </p>
         </div>
         <div class="col s6 m3 l3 ">
           <br>
-          <i class="material-icons medium" style="color:#fff">games</i>
+          <i class="material-icons medium" style="color:#33b3c6">games</i>
           <br>
-          <p style="color:#fff">
+          <p style="color:#06223b">
             <b>Games (HTML5)</b>
           </p>
         </div>
@@ -242,7 +242,7 @@
       <br>
       <br>
       <div class="col s12 m7 l7">
-        <h4 style="color:#fff">Maatwerk</h4>
+        <h4 style="color:#06223b">Maatwerk</h4>
         <p>Het wereld wijde web is veel veranderd de afgelopen tijd. Ik heb al vele jaren ervaring met alles wat zich afspeelt
           op het web, en pas de nieuwste en laatste technieken toe in mijn werk. De sites/applicaties die ik codeer kunnen
           op elk device worden bekeken en zijn razendsnel. Als developer ontwikkel ik full-stack. Dat wil zeggen dat ik zowel
@@ -272,7 +272,7 @@
         <br>
         <br>
         <br>
-        <h4 style="color:#0d1a2d">Oplossingsgericht</h4>
+        <h4 style="color:#06223b">Oplossingsgericht</h4>
         <p>Ik denk graag mee over oplossingen waar bedrijven tegenaan lopen. Gebruiksvriendelijkheid staat daarmee bij mij hoog
           in het vaandel. Geen poespas dus, de eindgebruiker staat centraal. Qua ontwerp houd ik alles het liefst lekker
           modern en strak. Verder is het een kwestie van de juiste tools gebruiken voor ieder project, en ik ben niet bang
@@ -288,9 +288,6 @@
   </div>
 
 </div>
-<svg id="bigTriangleColor2" xmlns="http://www.w3.org/2000/svg" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
-  <path d="M0 0 L50 100 L100 0 Z" />
-</svg>
 
 
 
@@ -303,17 +300,17 @@
  </div> -->
 
 <!--Work-->
-<div class="section scrollspy" style="background-color: #32b4c6" id="work">
+<div class="section scrollspy" style="background-color: #f7f7f7" id="work">
   <div class="container center">
     <br>
     <br>
     <br>
 
-    <p class="or-divider" style="color:#fff">Werk</p>
+    <p class="or-divider" style="color:#06223b">Werk</p>
     <br>
 
     <div class="row">
-      <div *ngFor="let work of workArray| paginate: { itemsPerPage: 3, currentPage: p } ;let i = index " class="col s12 m4 l4">
+      <div *ngFor="let work of workArray| paginate: { itemsPerPage: 6, currentPage: p } ;let i = index " class="col s12 m4 l4">
         <div class="card">
           <div (click)="showWork(i)" [ngStyle]="{'background-image': 'url(' + work.cover + ')'}" style="height:200px;background-size:cover"
             class="card-image waves-effect waves-block waves-light ">
@@ -329,7 +326,7 @@
       </div>
     </div>
 
-    <div class="center white-text">
+    <div class="center black-text">
       <pagination-controls (pageChange)="p = $event" previousLabel="Vorige" nextLabel="Volgende"></pagination-controls>
     </div>
     <br>
@@ -341,16 +338,16 @@
 
 
 
-<nav *ngIf="!moreInfo" style="height:120px;background-image:url(assets/gradient2.jpg); background-size: cover;">
+<nav *ngIf="!moreInfo" style="height:120px" class="bg_color">
   <a (click)="toggleMoreInfo()" style="cursor:pointer">
     <div class="nav-wrapper" style="padding:15px">
-      <a href="#!" class="brand-logo center" style="color:#fff">Meer info? Klik hier</a>
+      <h4 class="center">Meer info?</h4>
     </div>
   </a>
 </nav>
 
 
-<div *ngIf="moreInfo" class="section scrollspy" id="asdsadas" style="background-image:url(assets/gradient2.jpg); background-size: cover;">
+<div *ngIf="moreInfo" class="section scrollspy bg_color" style="color:#365370 !important" id="asdsadas" >
   <div class="container">
     <div class="row">
       <div class="col s12 m4 white-text">
@@ -387,7 +384,7 @@
                 even
                 <a href="#contact">contact</a> op om uw wens kenbaar te maken.
                 <br>
-                <h5>Techniek</h5>
+                <h5>Development</h5>
                 <ul class="browser-default">
                   <li>Website of webapplicatie ontwikkeling</li>
                   <li>Html5 Games ontwikkeling</li>
@@ -398,7 +395,7 @@
                   <li>Animaties op het web</li>
                 </ul>
 
-                <h5>Ontwerp</h5>
+                <h5>Design</h5>
                 <ul class="browser-default">
                   <li>Drukwerk opmaken (bv brochure, folders etc)</li>
                   <li>Animatievideo's</li>
@@ -412,7 +409,7 @@
             <div class="collapsible-header ">
               <i class="material-icons ">person</i>Werk je alleen?</div>
             <div class="collapsible-body white">
-              <span>Als bedrijf ben ik een one-man-army. Maar ik werk heel graag samen met andere, samen sta je immers sterker.</span>
+              <span>Als bedrijf ben ik een one-man-army. Maar ik werk graag samen met anderen.</span>
             </div>
           </li>
           <li>
@@ -427,8 +424,7 @@
             <div class="collapsible-header ">
               <i class="material-icons">code</i>Source code?</div>
             <div class="collapsible-body white">
-              <span>Bij mij heeft u altijd recht op de source code van de applicatie. Dit in verband met dat een andere developer
-                er gemakkelijk bij kan. Ik werk ook heel graag met een Open Source mentaliteit.</span>
+              <span>Bij mij heeft u altijd recht op de source code van de applicatie. Ik werk ook graag met een Open Source mentaliteit.</span>
             </div>
           </li>
 
@@ -453,13 +449,11 @@
       <p class="or-divider" style="color:white">Contact</p>
       <br>
       <br>
-      <br>
-      <br>
       <div class="col l6 s12 ">
         <form class="col s12">
           <div class="row center">
             <A HREF="mailto:eddie@edease.nl">
-
+              <h6 class="center" style="color: #06223b">Klik voor mail</h6>
               <i class="large material-icons" style="color:#fff">contact_mail</i>
             </A>
           </div>
