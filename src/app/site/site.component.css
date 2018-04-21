@@ -266,6 +266,11 @@ a {
   color: #fff !important;
 }
 
+.bg_color5 {
+  background-color: #268bc8  !important;
+  color: #fff !important;
+}
+
 .bg_color {
   background-color: #06223b  !important;
   color: #fff !important;
@@ -312,13 +317,14 @@ a {
 }
 
 .headd h6 {
-  background-color: #d3e7f3;
+  color: #ffffff;
   padding: 20px;
   font-weight: 460;
-  color: #365370;
-  display: inline-block;
   font-size: 1.1rem;
-  border-radius: 90px;
+
+  /* background-color: #d3e7f3;
+  display: inline-block;
+  border-radius: 90px; */
 }
 
 #nav_f {
