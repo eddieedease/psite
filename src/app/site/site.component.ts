@@ -95,6 +95,7 @@ export class SiteComponent implements OnInit {
       });
       $('.scrollspy').scrollSpy();
       $('.modal').modal({
+        dismissible: false,
         startingTop: '80%',
         endingTop: '2%',
       });
