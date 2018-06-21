@@ -18,11 +18,14 @@
 
 <!-- Modal Structure -->
 <div id="modal1" class="modal">
+    <div class="modal-footer" style="background-color: #64B5F6 ">
+        <a class="modal-action modal-close waves-effect white-text waves-green btn-flat">Sluit</a>
+      </div>
   <div class="modal-content">
     <app-work></app-work>
   </div>
-  <div class="modal-footer">
-    <a class="modal-action modal-close waves-effect waves-green btn-flat">Sluit</a>
+  <div class="modal-footer" style="background-color: #64B5F6 ">
+    <a class="modal-action modal-close waves-effect white-text waves-green btn-flat">Sluit</a>
   </div>
 </div>
 
@@ -139,7 +142,7 @@
     <div class="center">
       <div class="row">
         <br>
-        
+        <br><br>
 
 
         <div class="col s6 m3 l3 ">
@@ -176,7 +179,7 @@
         </div>
       </div>
       <br>
-  
+      <br><br>
     </div>
 
     <div class="row " style="background-color:#f7f7f7;padding: 30px;border-radius: 10px">
@@ -192,7 +195,7 @@
             <br>Neem gerust
             <b>
               <a style="color:#30b3c6" href="#contact">contact</a>
-            </b>op als je denkt dat we iets voor elkaar kunnen betekenen.</p>
+            </b> op als je denkt dat we iets voor elkaar kunnen betekenen.</p><br><br><br><br>
         </div>
       </div>
       <div class="col s12 m1 l1">
@@ -290,25 +293,25 @@
  </div> -->
 
 <!--Work-->
-<div class="section scrollspy" id="work">
+<div class="section scrollspy" style="background-color: #32b3c6"  id="work">
   <div class="container center">
     <br>
     <br>
     <br>
 
-    <p class="or-divider" style="color:#06223b">Werk</p>
+    <p class="or-divider" style="color:#fff">Werk</p>
     <br>
 
     <div class="row">
-      <div *ngFor="let work of workArray| paginate: { itemsPerPage: 6, currentPage: p } ;let i = index " class="col s12 m4 l4">
+      <div *ngFor="let work of workArray| paginate: { itemsPerPage: 8, currentPage: p } ;let i = index " class="col s6 m4 l3">
         <div class="card">
-          <div (click)="showWork(i)" [ngStyle]="{'background-image': 'url(' + work.cover + ')'}" style="height:200px;background-size:cover"
+          <div (click)="showWork(i)" [ngStyle]="{'background-image': 'url(' + work.cover + ')'}" style="height:200px;background-size:cover;background-position: center center;"
             class="card-image waves-effect waves-block waves-light ">
 
           </div>
 
-          <div (click)="showWork(i)">
-            <span class="card-title grey-text text-darken-4 ">{{work.title}}
+          <div style="padding:10px;background-color: #268bc8;color: white !important" (click)="showWork(i)">
+            <span class="card-title white-text">{{work.title}}
               <i class="mdi-navigation-more-vert right "></i>
             </span>
           </div>
@@ -352,7 +355,7 @@
         <ul class="collapsible popout " data-collapsible="accordion">
           <li>
             <div class="collapsible-header ">
-              <i class="material-icons" style="color:rgb(248, 228, 52)">build</i>Wat is je toolset?</div>
+              <i class="material-icons" style="color:rgb(16, 13, 34)">build</i>Wat is je toolset?</div>
             <div class="collapsible-body white">
               <span>Ik heb een licentie op
                 <b>Adobe Cloud CC</b>, en kan ik al jaren overweg met programma's zoals Photoshop, Illustrator, Indesign en
@@ -367,7 +370,7 @@
           </li>
           <li>
             <div class="collapsible-header ">
-              <i class="material-icons" style="color:rgb(248, 228, 52)">list</i>Werkzaamheden op een rijtje?</div>
+              <i class="material-icons" style="color:rgb(16, 13, 34)">list</i>Werkzaamheden op een rijtje?</div>
             <div class="collapsible-body white ">
               <span>
                 Onderstaand een opsomming van de werkzaamheden die het voor mij het meeste voorkomen. Staat er niet bij wat u zoekt? Neem
@@ -397,14 +400,14 @@
           </li>
           <li>
             <div class="collapsible-header ">
-              <i class="material-icons" style="color:rgb(248, 228, 52)">person</i>Werk je alleen?</div>
+              <i class="material-icons" style="color:rgb(16, 13, 34)">person</i>Werk je alleen?</div>
             <div class="collapsible-body white">
               <span>Als bedrijf ben ik een one-man-army. Maar ik werk graag samen met anderen.</span>
             </div>
           </li>
           <li>
             <div class="collapsible-header ">
-              <i class="material-icons" style="color:rgb(248, 228, 52)">highlight_off</i>Ontwikkel je ook Wordpress?</div>
+              <i class="material-icons" style="color:rgb(16, 13, 34)">highlight_off</i>Ontwikkel je ook Wordpress?</div>
             <div class="collapsible-body white">
               <span>Nee. Dat heb ik vroeger wel gedaan, maar die tijd is voorbij. Het is nog steeds een prima platform voor degene
                 die het gebruiken maar zelf kies toch voor moderne SPA development.</span>
@@ -412,7 +415,7 @@
           </li>
           <li>
             <div class="collapsible-header ">
-              <i class="material-icons" style="color:rgb(248, 228, 52)">code</i>Source code?</div>
+              <i class="material-icons" style="color:rgb(16, 13, 34)">code</i>Source code?</div>
             <div class="collapsible-body white">
               <span>Bij mij heeft u altijd recht op de source code van de applicatie. Ik werk ook graag met een Open Source mentaliteit.</span>
             </div>
@@ -436,8 +439,11 @@
   <div class="container">
     <div class="row ">
       <br>
-      <p class="or-divider" style="color:white">Contact</p>
-      <br>
+      <div class="center">
+        <img class="responsive-img" src="assets/contact.png" style="max-width: 200px"></div><br>
+
+      <p class="or-divider" style="color:white">Contactgegevens</p>
+      
       <br>
       <div class="col l6 s12 ">
         <form class="col s12">

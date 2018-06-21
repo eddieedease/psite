@@ -5,8 +5,8 @@
 
   <div class="card-content" >
     <a (click)="cycleWork('prev')" class="btn-flat white-text  waves-effect waves-light blue lighten-2" style="border-radius:20px">
-      <<</a>
-        <a (click)="cycleWork('next')" class="btn-flat white-text waves-effect waves-light blue lighten-2" style="border-radius:20px;float:right">>></a>
+      << Vorig project</a>
+        <a (click)="cycleWork('next')" class="btn-flat white-text waves-effect waves-light blue lighten-2" style="border-radius:20px;float:right">Volgend project >></a>
     <div class="row" >
     
       
@@ -20,7 +20,7 @@
               <div class="container" style="color:black !important"> <ngx-gallery [options]="galleryOptions"  [images]="galleryImages"></ngx-gallery></div>
             
       </div>
-      <div class="col s12 m12 l5">
+      <div class="col s12 m12 l5"><br><br>
         <h4>{{currentTitle}}</h4>
           <hr>
             <p><b>Klant:</b> {{currentCustomer}}</p>
