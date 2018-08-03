@@ -14,7 +14,7 @@
 
 #bigTriangleColor3 {
   fill: #268bc8;
-  background-color:#f7f7f7;
+  background-color: #f7f7f7;
   margin-bottom: -15px;
 }
 
@@ -24,16 +24,14 @@
   margin-bottom: -15px;
 }
 
-.collapsible-header{
-background-color: #268bc8;
-color: #fff;
-border-radius: 5px;
+.collapsible-header {
+  background-color: #268bc8;
+  color: #fff;
+  border-radius: 5px;
 }
 
-
-
-.material-icons{
-  color:#355470;
+.material-icons {
+  color: #355470;
 }
 
 /* Custom Stylesheet */
@@ -222,13 +220,11 @@ a {
   top: 0;
 }
 
-
 /**
  *
  * Made By Joash Pereira
  * Thanks for MaterializeCSS.com
  */
-
 
 /* #70c1b3
  #247ba0
@@ -242,7 +238,7 @@ a {
 }
 
 .first_color {
-  background-color:#30b3c6 !important
+  background-color: #30b3c6 !important
 }
 
 .second_color {
@@ -262,22 +258,24 @@ a {
 }
 
 .bg_color2 {
-  background-color: #355470  !important;
-  color: #fff !important;
+  background-color: #fff !important;
+  color: #cfd5dc !important;
+}
+
+.bg_color2 a {
+  font-weight: 450 !important;
+  color: #06223b  !important;
 }
 
 .bg_color5 {
-  background-color: #355370  !important;
+  background-color: #355370 !important;
   color: #fff !important;
 }
 
 .bg_color {
-  background-color: #06223b  !important;
+  background-color: #06223b !important;
   color: #fff !important;
 }
-
-
-
 
 .bg_color_blue {
   background-color: #013A4C !important
@@ -297,8 +295,8 @@ a {
   background-color: #F0F0F0;
 }
 
-.edgradient{
-  background-color:#fff;
+.edgradient {
+  background-color: #fff;
 }
 
 .headd {
@@ -317,11 +315,10 @@ a {
 }
 
 .headd h6 {
-  color: #ffffff;
-  padding: 20px;
-  font-weight: 460;
+  color: #32b3c6;
+  padding: 10px;
+  font-weight: 300;
   font-size: 1.1rem;
-
   /* background-color: #d3e7f3;
   display: inline-block;
   border-radius: 90px; */
@@ -405,7 +402,6 @@ nav ul a {
   padding: 0px 15px;
 }
 
-
 /* Preloader */
 
 #preloader {
@@ -488,7 +484,7 @@ nav a.button-collapse {
   font-size: 16px !important;
 }
 
-.card .card-title{
+.card .card-title {
   font-size: 16px !important;
 }
 
@@ -516,7 +512,6 @@ footer.page-footer {
 .carousel .carousel-item>img {
   min-height: 300px;
 }
-
 
 /* particles! */
 
@@ -584,45 +579,47 @@ footer.page-footer {
 }
 
 /* DIVIDERSSSSSS */
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: stretch;
-    min-height: 80vh;
-  }
-  .or-divider{
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color:#365370;
-    font-size: 2em;
-    margin: 0 1em;
-  }
-  .or-divider.italic{
-    font-style: italic;
-  }
-  .or-divider::before{
-    content: '';
-    height: .125em;
-    background: #365370;
-    flex: 1;
-    margin: 0 .25em 0 0;
-  }
-  .or-divider::after{
-    content: '';
-    height: .125em;
-    background: #365370;
-    flex: 1;
-    margin: 0 0 0 .25em;
-  }
-  .or-divider.italic::before,
-  .or-divider.italic::after{
-    transform: skew(-18deg)
-  }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  min-height: 80vh;
+}
 
+.or-divider {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #365370;
+  font-size: 2em;
+  margin: 0 1em;
+}
 
- 
+.or-divider.italic {
+  font-style: italic;
+}
+
+.or-divider::before {
+  content: '';
+  height: .125em;
+  background: #365370;
+  flex: 1;
+  margin: 0 .25em 0 0;
+}
+
+.or-divider::after {
+  content: '';
+  height: .125em;
+  background: #365370;
+  flex: 1;
+  margin: 0 0 0 .25em;
+}
+
+.or-divider.italic::before,
+.or-divider.italic::after {
+  transform: skew(-18deg)
+}

@@ -46,7 +46,7 @@ export class SiteComponent implements OnInit {
   public p = 1;
 
   // workitems
-  itemsOnWork = 8;
+  itemsOnWork = 6;
 
   // boolean for showing more info
   moreInfo = false;
