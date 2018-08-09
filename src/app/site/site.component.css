@@ -233,8 +233,7 @@ a {
  #f25f5c */
 
 .section {
-  padding-top: 0rem;
-  padding-bottom: 0rem;
+
 }
 
 .first_color {
@@ -264,7 +263,7 @@ a {
 
 .bg_color2 a {
   font-weight: 450 !important;
-  color: #06223b  !important;
+  color: #7fb7e7  !important;
 }
 
 .bg_color5 {

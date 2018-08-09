@@ -118,13 +118,17 @@
         <div class="col m12 l12 s12">
           <br>
           <br>
+          <br>
+          <br>
 
           <img class="responsive-img" src="assets/logo1b.png" style="max-width: 200px">
         </div>
         <div class="col m12 l12 s12" >
           <br>
           <br><br>
+          <br><br>
           <br>
+
           <br> _________________________________________________
         </div>
       </div>
@@ -185,8 +189,8 @@
 
 
 
-<div style="background-color: #268bc8">
-  <div class="container white-text flow-text">
+<div  style="background-color: #268bc8">
+  <div class="container  white-text flow-text">
     <div class="container flow-text">
 
       <br>
@@ -287,17 +291,17 @@
  </div> -->
 
 <!--Work-->
-<div class="section scrollspy" id="work">
+<div class="section scrollspy bg_color" id="work">
   <div class="container center">
     <br>
     <br>
     <br>
 
-    <p class="or-divider" style="color:#06223b">Werk</p>
+    <p class="or-divider" style="color:#f6b63e">Werk</p>
 
     <div class="row">
       <div *ngFor="let work of workArray| paginate: { itemsPerPage: 6, currentPage: p } ;let i = index " class="col s6 m4 l4">
-        <div class="card">
+        <div class="card" style="border-top-left-radius:20px !important;border-top-right-radius:20px ">
           <div (click)="showWork(i)" [ngStyle]="{'background-image': 'url(' + work.cover + ')'}" style="border-top-left-radius:20px !important;border-top-right-radius:20px !important;height:200px;background-size:cover;background-position: center center;"
             class="card-image waves-effect waves-block waves-light ">
           </div>
@@ -321,21 +325,21 @@
 
 
 
-<nav *ngIf="!moreInfo" style="background-color: white">
+<nav *ngIf="!moreInfo" class="bg_color" >
   <br>
+  
   <a (click)="toggleMoreInfo()" style="cursor:pointer">
 
     <div class="nav-wrapper">
-
-
-      <h5 class="center" style="color: #32b3c6;padding-top:10px">Meer info?</h5>
+      <h5 class="center" style="color: #f6b63e" >Meer info?</h5>
 
     </div>
   </a>
+  <br>
 </nav>
 
 
-<div *ngIf="moreInfo" class="section scrollspy bg_color" style="color:#365370 !important" id="asdsadas">
+<div *ngIf="moreInfo" class="section scrollspy bg_color" style="color:#26073a !important" id="asdsadas">
   <div class="container">
     <div class="row">
       <div class="col s12 m4 white-text">
@@ -420,7 +424,7 @@
 
 
 <!--Footer-->
-<footer id="contact" class="scrollspy" style="background-color:#06223b ">
+<footer id="contact" class="scrollspy" style="background-color:#4a6a88 ">
   <br>
   <br>
   <div class="container">
@@ -435,7 +439,7 @@
         <form class="col s12">
           <div class="row center">
             <A HREF="mailto:eddie@edease.nl">
-              <h5 class="center" style="color: #32b3c6">Mailen?</h5>
+              <h5 class="center" style="color: #f6b63e">Mailen?</h5>
               <i class="large material-icons" style="color:#fff">contact_mail</i>
             </A>
           </div>
@@ -445,7 +449,7 @@
         <div class="row left white-text">
 
           <A HREF="mailto:eddie@edease.nl">
-            <p style="color: white">
+            <p style="color:#f6b63e">
               <b>Email:</b> eddie@edease.nl</p>
           </A>
           <p>
