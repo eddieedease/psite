@@ -263,7 +263,7 @@ a {
 
 .bg_color2 a {
   font-weight: 450 !important;
-  color: #7fb7e7  !important;
+  color: #132163  !important;
 }
 
 .bg_color5 {
@@ -330,9 +330,9 @@ a {
 }
 
 .headd h6 {
-  color: #fff;
+  color: #132163;
   padding: 10px;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.3rem;
   /* background-color: #d3e7f3;
   display: inline-block;
