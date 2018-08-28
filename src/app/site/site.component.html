@@ -18,14 +18,11 @@
 
 <!-- Modal Structure -->
 <div id="modal1" class="modal">
-  <div class="modal-footer" style="background-color: #06223b  ">
-    <a class="modal-action modal-close waves-effect white-text waves-green btn-flat">Sluit</a>
+  <div class="modal-footer" style="background-color: #acb7c1  ">
+    <a class="modal-action modal-close waves-effect white-text waves-green btn-flat">< Terug naar site</a>
   </div>
   <div class="modal-content">
     <app-work></app-work>
-  </div>
-  <div class="modal-footer" style="background-color: #06223b  ">
-    <a class="modal-action modal-close waves-effect white-text waves-green btn-flat">Sluit</a>
   </div>
 </div>
 
@@ -35,7 +32,7 @@
 
 <nav>
   <div class="navbar-fixed">
-    <nav class="bg_color2" role="navigation">
+    <nav class="navvie" role="navigation">
       <div class="container">
         <div class="nav-wrapper">
           <ul class="right hide-on-med-and-down">
@@ -141,20 +138,20 @@
 
         <div class="col s6 m3 l3 ">
           <br>
-          <i class="material-icons medium" style="color:#fff">code</i>
+          <i class="material-icons medium" style="color:#09324a">code</i>
 
           <h6>Ontwikkeling</h6>
 
         </div>
         <div class="col s6 m3 l3">
           <br>
-          <i class="material-icons medium" style="color:#fff">web</i>
+          <i class="material-icons medium" style="color:#09324a">web</i>
 
           <h6>Ontwerp/Drukwerk</h6>
         </div>
         <div class="col s6 m3 l3">
           <br>
-          <i class="material-icons medium" style="color:#fff">movie</i>
+          <i class="material-icons medium" style="color:#09324a">movie</i>
 
 
           <h6>Animaties</h6>
@@ -162,7 +159,7 @@
         </div>
         <div class="col s6 m3 l3 ">
           <br>
-          <i class="material-icons medium" style="color:#fff">games</i>
+          <i class="material-icons medium" style="color:#09324a">games</i>
 
           <h6>HTML5 Games</h6>
 
@@ -237,7 +234,7 @@
 </div>
 
 
-<div style="background-color: #268bc8">
+<div style="background-color: #09324a">
   <br>
     <div class="container flow-text white-text">
         <div class="row">
@@ -304,16 +301,16 @@
  </div> -->
 
 <!--Work-->
-<div class="section scrollspy bg_color" id="work">
+<div class="section scrollspy" id="work">
   <div class="container center">
     <br>
     <br>
     <br>
 
-    <p class="or-divider" style="color:#fff">Werk</p>
+    <p class="or-divider" style="color:#000">Werk</p>
 
     <div class="row">
-      <div *ngFor="let work of workArray| paginate: { itemsPerPage: 6, currentPage: p } ;let i = index " class="col s6 m4 l4">
+      <div *ngFor="let work of workArray| paginate: { itemsPerPage: 9, currentPage: p } ;let i = index " class="col s6 m4 l4">
         <div class="card" style="border-top-left-radius:20px !important;border-top-right-radius:20px ">
           <div (click)="showWork(i)" [ngStyle]="{'background-image': 'url(' + work.cover + ')'}" style="border-top-left-radius:20px !important;border-top-right-radius:20px !important;height:200px;background-size:cover;background-position: center center;"
             class="card-image waves-effect waves-block waves-light ">
@@ -338,7 +335,7 @@
 
 
 
-<nav *ngIf="!moreInfo" class="bg_color">
+<nav *ngIf="!moreInfo" style="background-color: white">
   <br>
 
   <a (click)="toggleMoreInfo()" style="cursor:pointer">
@@ -445,14 +442,14 @@
       <br>
 
 
-      <p class="or-divider" style="color:#32b3c6 !important">Contactgegevens</p>
-
+      <p class="or-divider" style="color:#09324a !important">Contact</p>
       <br>
+      
       <div class="col l6 s12 ">
         <form class="col s12">
           <div class="row center">
             <A HREF="mailto:eddie@edease.nl">
-              <h5 class="center" style="color: #f6b63e">Mailen?</h5>
+              <p class="center">Stuur een mailtje!</p>
               <i class="large material-icons" style="color:#132163 !important">contact_mail</i>
             </A>
           </div>

@@ -13,9 +13,18 @@
 }
 
 #bigTriangleColor3 {
-  fill: #268bc8;
+  fill: #09324a;
   background-color: #f7f7f7;
   margin-bottom: -15px;
+}
+
+.navvie a {
+  color: #f6bd6b !important;
+
+}
+
+.navvie {
+  background-color: #09324a !important;
 }
 
 #bigTriangleColor4 {
@@ -330,7 +339,7 @@ a {
 }
 
 .headd h6 {
-  color: #132163;
+  color: #fff;
   padding: 10px;
   font-weight: 400;
   font-size: 1.3rem;
