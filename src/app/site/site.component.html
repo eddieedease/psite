@@ -55,7 +55,7 @@
             </li> -->
           </ul>
 
-          <ul id="nav-mobile" class="side-nav">
+          <ul id="nav-mobile" class="side-nav" style="background-color: navy">
             <li>
               <div class="user-view">
                 <div class="background">
@@ -73,17 +73,17 @@
               </div>
             </li>
             <li>
-              <a class="black-text" href="#intro">Over</a>
+              <a class="black-text" href="#intro">- Over</a>
             </li>
             <li>
-              <a class="black-text" href="#work">Werk</a>
+              <a class="black-text" href="#work">- Werk</a>
             </li>
             <li>
-              <a class="black-text" href="#contact">Contact</a>
+              <a class="black-text" href="#contact">- Contact</a>
             </li>
           </ul>
           <a data-activates="nav-mobile" class="button-collapse left">
-            <div class="material-icons" style="color:#32b3c6">input</div> Menu
+            <div class="material-icons" style="color:#32b3c6">input</div>&nbsp;&nbsp; Menu
           </a>
         </div>
       </div>
@@ -116,19 +116,15 @@
           <br>
           <br>
           <br>
-          <br>
 
           <img class="responsive-img" src="assets/logo1b.png" style="max-width: 200px">
         </div>
         <div class="col m12 l12 s12">
           <br>
           <br>
-          <br>
-          <br>
-          <br>
-          <br>
+     
 
-          <br> _________________________________________________
+          <br> 
         </div>
       </div>
 
@@ -205,10 +201,7 @@
               </b> ondersteunt bedrijven met het bedenken, ontwerpen en realiseren van multimediaoplossingen.
               <br>
               <br> Dit varieert van het coden van een applicatie, tot het maken van een animatie. Deze brede inzetbaarheid is
-              mijn kracht als zzp-er. Neem gerust
-              <b>
-                <a style="color:#f6b63e " href="#contact">contact</a>
-              </b> op als je denkt dat we iets voor elkaar kunnen betekenen.</p>
+              mijn kracht als zzp-er. Neem gerust <a style="color:#f6b63e" href="#contact"><b>contact</b></a> op als je denkt dat we iets voor elkaar kunnen betekenen.</p>
             <br>
             <br>
             <br>
@@ -301,7 +294,7 @@
  </div> -->
 
 <!--Work-->
-<div class="section scrollspy" id="work">
+<div class="scrollspy werkbg" id="work">
   <div class="container center">
     <br>
     <br>
@@ -316,18 +309,19 @@
             class="card-image waves-effect waves-block waves-light ">
           </div>
 
-          <div style="padding:15px;background-color: #268bc8;color: white !important" (click)="showWork(i)">
+          <div style="padding:15px;background-color: #09324a;color: white !important" (click)="showWork(i)">
             <span class="card-title white-text">{{work.title}}
             </span>
           </div>
         </div>
         <br>
       </div>
+      <div class="center black-text">
+        <pagination-controls (pageChange)="p = $event" previousLabel="Vorige" nextLabel="Volgende"></pagination-controls>
+      </div>
     </div>
 
-    <div class="center black-text">
-      <pagination-controls (pageChange)="p = $event" previousLabel="Vorige" nextLabel="Volgende"></pagination-controls>
-    </div>
+    
 
   </div>
 
@@ -335,18 +329,13 @@
 
 
 
-<nav *ngIf="!moreInfo" style="background-color: white">
-  <br>
-
+<div *ngIf="!moreInfo" class="bg_color">
+    <br>
   <a (click)="toggleMoreInfo()" style="cursor:pointer">
-
-    <div class="nav-wrapper">
-      <h5 class="center" style="color: #f6b63e">Meer info?</h5>
-
-    </div>
+      <p class="center" style="color: #fff">Meer info? Klik hier</p>
   </a>
   <br>
-</nav>
+</div>
 
 
 <div *ngIf="moreInfo" class="section scrollspy bg_color" style="color:#26073a !important" id="asdsadas">
